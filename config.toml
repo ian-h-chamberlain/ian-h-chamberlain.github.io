@@ -1,0 +1,3 @@
+base_url = "https://ian-h-chamberlain.github.io"
+build_search_index = false
+generate_feed = false
