@@ -1,0 +1,8 @@
+[[project]]
+name = "Sample Project"
+desc = "Some little project I worked on"
+tags = ["sample", "test"]
+links = [
+    { name = "Github", url = "https://github.com/ian-h-chamberlain/dotfiles" },
+    { name = "itch.io", url = "ian-h-chamberlain.itch.io" },
+]

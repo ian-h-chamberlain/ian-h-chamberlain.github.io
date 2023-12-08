@@ -30,7 +30,17 @@
 - [zola.386](https://www.getzola.org/themes/zola-386/)
 - [polymathic](https://www.getzola.org/themes/polymathic/)
 
-## TODOs
+## Theme TODOs
+
+- [ ] Strip out unnecessary JS / CSS for math and stuff
+  - Probably will want to override the head block
+  -
+- [ ] Maybe try some different colors /
+- [ ] Fix navbar weird spacing
+  - Remove `#toggler` from separator should do, or disable JS somehow
+- [ ] Decide separate about page or nah? Probably should
+
+## General TODOs
 
 - [ ] Fill out actual resume information, lol
   - [ ] work experience / education
