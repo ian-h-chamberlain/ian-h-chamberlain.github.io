@@ -32,13 +32,15 @@
 
 ## Theme TODOs
 
-- [ ] Strip out unnecessary JS / CSS for math and stuff
-  - Probably will want to override the head block
-  -
+- [x] Strip out unnecessary JS / CSS for math and stuff
+  - ~~Maybe will want to override the head block~~
+  - Actually seems like this stuff is already not present if not needed
 - [ ] Maybe try some different colors /
-- [ ] Fix navbar weird spacing
-  - Remove `#toggler` from separator should do, or disable JS somehow
-- [ ] Decide separate about page or nah? Probably should
+- Fix navbar weird spacing
+  - [x] ~~Remove `#toggler` from separator should do, or disable JS somehow~~
+    Ended up just overriding the style instead.
+  - [x] Adjust asymmetrical nav bar separator
+- [ ] Decide separate about page or nah? I think yes
 
 ## General TODOs
 

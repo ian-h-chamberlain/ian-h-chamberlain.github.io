@@ -1,0 +1,15 @@
+// Start off with all the same stuff as the base theme:
+@import "../themes/serene/sass/main";
+
+header {
+  nav {
+    .wrap-separator {
+      // The default is set for a comma-separated list like `a, b, c`,
+      // but I want a pipe-separated list like `a | b | c`.
+      margin: 0 0.3em 0 0.3em;
+    }
+    .fold {
+      display: initial;
+    }
+  }
+}
