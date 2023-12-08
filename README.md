@@ -5,19 +5,23 @@
 ### Resume focused / heavily featured
 
 - [ataraxia](https://www.getzola.org/themes/ataraxia-zola/)
-- [kodama](https://www.getzola.org/themes/kodama-theme/) (no JS, kinda boring tho)
-- [sam](https://www.getzola.org/themes/sam/) (very minimal, not my fave)
+- ~~[kodama](https://www.getzola.org/themes/kodama-theme/) (no JS, kinda boring tho)~~
+- ~~[sam](https://www.getzola.org/themes/sam/) (very minimal, not my fave)~~
 - [resume](https://www.getzola.org/themes/resume/) (needs some restyling and feels kinda slideshowy)
-- [hephaestus](https://www.getzola.org/themes/hephaestus/) (could probably use some restyling)
+  - Still consider as maybe
+- ~~[hephaestus](https://www.getzola.org/themes/hephaestus/) (could probably use some restyling)~~
+  - 3rd party CSS framework that looks hard to customize
 
 ### Photo centric
 
-- [boring](https://www.getzola.org/themes/boring)
-- [zplit](https://www.getzola.org/themes/zplit/)
+- ~~[boring](https://www.getzola.org/themes/boring)~~
+- ~~[zplit](https://www.getzola.org/themes/zplit/)~~
 
 ### More blog focused but maybe could work
 
 - [serene](https://www.getzola.org/themes/serene/)
+  - Seems like a strong contender, has light and dark themes
+  - A couple external JS/CSS libraries, but only for extra features: comments, KaTeX, Mermaid
 - [papaya](https://www.getzola.org/themes/papaya/)
 - [d3c3nt](https://www.getzola.org/themes/d3c3nt/)
 
