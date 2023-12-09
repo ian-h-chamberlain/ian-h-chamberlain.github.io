@@ -1,6 +1,28 @@
 [[project]]
 name = "Sample Project"
-desc = "Some little project I worked on"
+desc = """![Pist Off](https://img.itch.zone/aW1nLzExODEzMzMyLnBuZw==/315x250%23c/KHKgeD.png)
+
+Some little `project` I worked on. This line has a different style
+compared to \\<li\\> subsquent `inline` code.
+
+Code:
+- `regular`
+- _`ital`_
+- **`bold`**
+
+Prose:
+- regular
+- _ital_
+- **bold**
+
+```
+foo => bar()
+// baz
+## bim
+<=  >= ++
+->
+```
+"""
 tags = ["sample", "test"]
 links = [
     { name = "Github", url = "https://github.com/ian-h-chamberlain/dotfiles" },

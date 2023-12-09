@@ -1,0 +1,34 @@
+{% extends "serene/templates/prose.html" %}
+
+{% block script %}
+<script src="/js/lightense.min.js"></script>
+<script>
+  function customNavFold() {
+    const nav = document.querySelector('header nav');
+    if (!nav) return;
+    const toggler = nav.querySelector('#toggler');
+    if (!toggler) return;
+    const foldItems = nav.querySelectorAll('.fold');
+
+    for (const event of ['click', 'touchend']) {
+      toggler.addEventListener(event, () => {
+        const unfolded = () => [...foldItems].every(item => !item.classList.contains('shown'));
+        if (window.innerWidth < 768 && unfolded()) return;
+
+        toggler.classList.toggle('expanded');
+        foldItems.forEach(item => {
+          item.classList.toggle('shown-custom');
+        });
+      });
+    }
+  }
+
+  customNavFold();
+</script>
+{% if section.extra.mermaid %}
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+{% endif %}
+{% endblock script %}

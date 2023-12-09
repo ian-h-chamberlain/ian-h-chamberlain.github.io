@@ -1,15 +1,68 @@
-// Start off with all the same stuff as the base theme:
+// Start off with all the same stuff as the base theme
 @import "../themes/serene/sass/main";
 
+body {
+  // Seems that non-prose pages don't have this set by default
+  pre, code, kbd, samp {
+    font-family: var(--code-font);
+  }
+
+  &.projects .proj {
+    pre {
+      // Copied from '.prose pre'
+      font-size: 0.8em;
+      margin: 1.25em 0;
+      padding: 12px 48px 12px 16px;
+      line-height: 1.5;
+      border: 1.5px solid var(--primary-color);
+      overflow: auto;
+    }
+  }
+
+  :not(pre) > code {
+    // Copied from the equivalent '.proj p>code' rule in the base theme
+    font-family: var(--code-font);
+    font-size: 0.8em;
+    padding: 1px 6px;
+    color: var(--primary-color);
+    background-color: var(--primary-pale-color);
+    border-radius: 4px;
+  }
+}
+
+// TODO: nav bar wraps kinda weird on mobile, since my name is long and folding is disabled.
 header {
   nav {
-    .wrap-separator {
+    .wrap-separator,
+    .wrap {
       // The default is set for a comma-separated list like `a, b, c`,
       // but I want a pipe-separated list like `a | b | c`.
       margin: 0 0.3em 0 0.3em;
     }
+
+    #toggler {
+      font-family: var(--code-font);
+      padding-top: 0.3em;
+      transition: transform 0.2s;
+
+      &:hover {
+        color: var(--primary-color)
+      }
+
+      &.expanded {
+        transform: scale(-1, 1);
+      }
+    }
+
+    // Prevent "folded" nav bar from ever folding
     .fold {
-      display: initial;
+      display: none;
+
+      &.shown-custom,
+      &.wrap {
+        display: initial;
+      }
     }
   }
 }
+
