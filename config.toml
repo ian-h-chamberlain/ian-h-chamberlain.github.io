@@ -1,4 +1,4 @@
-title = "Ian H Chamberlain"
+title = "Ian H. Chamberlain"
 description = "Ian Chamberlain's personal website"
 
 base_url = "https://ian-h-chamberlain.github.io"
@@ -10,13 +10,25 @@ generate_feed = false
 compile_sass = true
 minify_html = true
 
+[markdown]
+render_emoji = true
+smart_punctuation = true
+highlight_code = true
+highlight_theme = "css"
+extra_syntaxes_and_themes = ["themes/serene/highlight_themes"]
+# Note: need to delete these generated files for changes to take effect:
+highlight_themes_css = [
+    { theme = "monokai", filename = "hl-dark.css" },
+    { theme = "base16-atelierdune-light", filename = "hl-light.css" },
+]
+
 [slugify]
 paths = "on"
 taxonomies = "on"
 anchors = "on"
 
 [extra]
-name = "Ian H Chamberlain"
+name = "Ian H. Chamberlain"
 id = "ian-h-chamberlain"
 # Shorter bio (more like a tagline) here
 bio = """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -32,7 +44,7 @@ homepage_layout = "about" # "about" | "list"
 
 sections = [
     { name = "about", path = "/about", is_external = false },
-    { name = "open-source", path = "/open-source", is_external = false },
+    { name = "open source", path = "/open-source", is_external = false },
     { name = "projects", path = "/projects", is_external = false },
 ]
 

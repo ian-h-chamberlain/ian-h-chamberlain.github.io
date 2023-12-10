@@ -7,7 +7,7 @@
   - Actually seems like this stuff is already not present if not needed
 - Try some different styling
   - [x] fonts
-  - [ ] colors (light + dark)
+  - [x] colors (light + dark)
 - Fix navbar weird spacing
   - [x] ~~Remove `#toggler` from separator should do, or disable JS somehow~~
     Ended up just overriding the style instead.

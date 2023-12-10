@@ -1,2 +1,4 @@
 /.vscode/
 /public/
+/static/hl-light.css
+/static/hl-dark.css
