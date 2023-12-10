@@ -1,38 +1,24 @@
 +++
-title = "Home"
-description = "Home page"
+title = "About Me"
+description = "Bio and information"
 template = "home.html"
 
 [extra]
 lang = "en"
 +++
 
-### About me
+<!-- markdownlint-disable-next-line single-h1 -->
+# About me
 
-How to reach me:
+Hi! I'm Ian, a software engineer living in the Boston area.
 
-- Email
-- Phone
-- Telegram
+I've been hacking around on computers since I was pretty young, as well as playing
+computer/video games. My uncle particularly helped spark my interest in programming
+when he bought me a copy of _Game Programming for Teens_ by Maneesh Sethi.
+From then on, I was dead-set on pursuing a career in computer science and game
+development to learn the skills I would need to eventually create games of my own!
 
-
-Some little `project` I worked on. This line has a different style
-compared to \<li\> subsquent `inline` code.
-
-Code:
-- `regular`
-- _`ital`_
-- **`bold`**
-
-Prose:
-- regular
-- _ital_
-- **bold**
-
-```
-foo => bar()
-// baz
-## bim
-<=  >= ++
-->
-```
+In my spare time, I enjoy playing video games (of course), snowboarding, and
+playing [ultimate](https://en.wikipedia.org/wiki/Ultimate_(sport)).
+In the same spirit of hacking and customization that I learned to love about
+open-source and software development, I also enjoy homebrewing beer!
