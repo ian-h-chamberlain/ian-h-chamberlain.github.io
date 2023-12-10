@@ -34,6 +34,22 @@ body {
 header nav {
   --toggle-animation-duration: 0.4s;
 
+  overflow: auto;
+  display: inline-flex;
+  margin-right: 0.3em;
+  white-space: nowrap;
+
+  * {
+    overflow: hidden;
+    // Seems to cut off the bottom of the '[' without this padding...
+    padding-bottom: 2px;
+  }
+
+  a:first-of-type {
+    flex-shrink: 100;
+    text-overflow: "…";
+  }
+
   #toggler {
     font-size: 0.75em;
     font-family: var(--code-font);
@@ -63,7 +79,8 @@ header nav {
 
   .fold {
     // override the display:none from the theme main.scss
-    display: initial;
+    display: inline-flex;
+    flex-grow: 3;
 
     opacity: 0;
     width: 0;

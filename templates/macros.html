@@ -1,5 +1,21 @@
 {% macro navbar() %}
 <script>
+  // https://stackoverflow.com/a/77517523/14436105
+  const onClickOrTap = (element, handler) => {
+    let touchMoved = false;
+
+    element.addEventListener('touchstart', () => touchMoved = false);
+    element.addEventListener('touchmove', () => touchMoved = true);
+    element.addEventListener('touchend', (e) => {
+      if (touchMoved) {
+        return;
+      }
+      e.preventDefault();
+      handler(e);
+    })
+    element.addEventListener('click', handler);
+  }
+
   function customNavFold() {
     const nav = document.querySelector('header nav');
     if (!nav) return;
@@ -11,36 +27,38 @@
       setTimeout(() => toggler.classList.add('active'), 300);
     });
 
-    for (const event of ['click', 'mouseover', 'mouseout']) {
-      toggler.addEventListener(event, () => {
-        const keepExpanded = toggler.classList.contains('keep-expanded');
-        const expanded = toggler.classList.contains('expanded');
-        if (window.innerWidth < 768 && expanded) return;
+    const handler = (event) => {
+      const keepExpanded = toggler.classList.contains('keep-expanded');
+      const expanded = toggler.classList.contains('expanded');
 
-        let modify = 'toggle';
-        switch (event) {
-          case 'click':
-            modify = keepExpanded ? 'remove' : 'add';
-            toggler.classList.toggle('keep-expanded');
-            break;
-          case 'mouseover':
-            if (keepExpanded) {
-              return;
-            }
-            break;
-          case 'mouseout':
-            if (keepExpanded || !expanded) {
-              return;
-            }
-            break;
-        }
+      let modify = 'toggle';
+      switch (event.type) {
+        case 'touchend':
+        case 'click':
+          modify = keepExpanded ? 'remove' : 'add';
+          toggler.classList.toggle('keep-expanded');
+          break;
+        case 'mouseover':
+          if (keepExpanded) {
+            return;
+          }
+          break;
+        case 'mouseout':
+          if (keepExpanded || !expanded) {
+            return;
+          }
+          break;
+      }
 
-        toggler.classList[modify]('expanded');
-        foldItems.forEach(item => {
-          item.classList[modify]('shown-custom');
-        });
+      toggler.classList[modify]('expanded');
+      foldItems.forEach(item => {
+        item.classList[modify]('shown-custom');
       });
-    }
+    };
+
+    toggler.addEventListener('mouseover', handler);
+    toggler.addEventListener('mouseout', handler);
+    onClickOrTap(toggler, handler);
   }
 
   customNavFold();
