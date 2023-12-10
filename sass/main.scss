@@ -19,7 +19,7 @@ body {
     }
   }
 
-  :not(pre) > code {
+  :not(pre)>code {
     // Copied from the equivalent '.proj p>code' rule in the base theme
     font-family: var(--code-font);
     font-size: 0.8em;
@@ -31,38 +31,64 @@ body {
 }
 
 // TODO: nav bar wraps kinda weird on mobile, since my name is long and folding is disabled.
-header {
-  nav {
-    .wrap-separator,
-    .wrap {
-      // The default is set for a comma-separated list like `a, b, c`,
-      // but I want a pipe-separated list like `a | b | c`.
-      margin: 0 0.3em 0 0.3em;
+header nav {
+  --toggle-animation-duration: 0.4s;
+
+  #toggler {
+    font-size: 0.75em;
+    font-family: var(--code-font);
+    // This seems to be required for certain browsers to pick up the ligatures:
+    font-feature-settings: "dlig";
+
+    padding-top: 0.3em;
+    margin: 0 0.3em 0 0.1em;
+
+    &:hover {
+      color: var(--primary-color)
     }
 
-    #toggler {
-      font-family: var(--code-font);
-      padding-top: 0.3em;
-      transition: transform 0.2s;
+    --toggler-initial: translate(0em, -0.1em);
 
-      &:hover {
-        color: var(--primary-color)
-      }
+    transition: transform var(--toggle-animation-duration) ease;
+    transform: var(--toggler-initial);
+
+    &.active {
+      transform: translate(0em, 0.1em) rotate(-90deg);
 
       &.expanded {
-        transform: scale(-1, 1);
+        transform: var(--toggler-initial);
       }
     }
+  }
 
-    // Prevent "folded" nav bar from ever folding
-    .fold {
-      display: none;
+  .fold {
+    // override the display:none from the theme main.scss
+    display: initial;
 
-      &.shown-custom,
-      &.wrap {
-        display: initial;
+    opacity: 0;
+    width: 0;
+    margin: 0;
+    overflow: hidden;
+
+    transition: opacity ease, width ease, margin ease;
+    transition-duration: var(--toggle-animation-duration);
+    transition-delay: 0;
+
+    &.shown-custom {
+      transition-delay: 0, var(--toggle-animation-duration), var(--toggle-animation-duration);
+      transition-duration: var(--toggle-animation-duration), calc(3*var(--toggle-animation-duration));
+    }
+
+    &.wrap,
+    &.shown-custom {
+      opacity: 1;
+      width: initial;
+
+      &.wrap-separator {
+        // The default is set for a comma-separated list like `a, b, c`,
+        // but I want a pipe-separated list like `a | b | c`.
+        margin: 0 0.3em 0 0.3em;
       }
     }
   }
 }
-

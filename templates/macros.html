@@ -1,0 +1,48 @@
+{% macro navbar() %}
+<script>
+  function customNavFold() {
+    const nav = document.querySelector('header nav');
+    if (!nav) return;
+    const toggler = nav.querySelector('#toggler');
+    if (!toggler) return;
+    const foldItems = nav.querySelectorAll('.fold');
+
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => toggler.classList.add('active'), 300);
+    });
+
+    for (const event of ['click', 'mouseover', 'mouseout']) {
+      toggler.addEventListener(event, () => {
+        const keepExpanded = toggler.classList.contains('keep-expanded');
+        const expanded = toggler.classList.contains('expanded');
+        if (window.innerWidth < 768 && expanded) return;
+
+        let modify = 'toggle';
+        switch (event) {
+          case 'click':
+            modify = keepExpanded ? 'remove' : 'add';
+            toggler.classList.toggle('keep-expanded');
+            break;
+          case 'mouseover':
+            if (keepExpanded) {
+              return;
+            }
+            break;
+          case 'mouseout':
+            if (keepExpanded || !expanded) {
+              return;
+            }
+            break;
+        }
+
+        toggler.classList[modify]('expanded');
+        foldItems.forEach(item => {
+          item.classList[modify]('shown-custom');
+        });
+      });
+    }
+  }
+
+  customNavFold();
+</script>
+{% endmacro navbar %}

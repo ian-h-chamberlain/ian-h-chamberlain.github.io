@@ -48,7 +48,7 @@ sections = [
     { name = "projects", path = "/projects", is_external = false },
 ]
 
-nav_separator = "<"
+nav_separator = '|>'
 nav_wrapper_left = "["
 nav_wrapper_right = "]"
 nav_wrapper_separator = "|"
