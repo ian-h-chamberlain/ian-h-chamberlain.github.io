@@ -20,5 +20,5 @@ development to learn the skills I would need to eventually create games of my ow
 
 In my spare time, I enjoy playing video games (of course), snowboarding, and
 playing [ultimate](https://en.wikipedia.org/wiki/Ultimate_(sport)).
-In the same spirit of hacking and customization that I learned to love about
-open-source and software development, I also enjoy homebrewing beer!
+In the same spirit of hacking and endless customization that I learned to love
+about open-source and software development, I also enjoy homebrewing beer!

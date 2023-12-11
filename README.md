@@ -12,6 +12,7 @@
   - [x] ~~Remove `#toggler` from separator should do, or disable JS somehow~~
     Ended up just overriding the style instead.
   - [x] Adjust asymmetrical nav bar separator
+  - [x] Still looks kinda bad when expanded on mobile, and hover acts weird
 - [ ] Decide separate `/about` page or nah?
 
 ## General TODOs
