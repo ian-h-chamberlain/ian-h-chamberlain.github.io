@@ -2,12 +2,6 @@
 {% import "macros.html" as macros %}
 
 {% block script %}
-<script src="/js/lightense.min.js"></script>
+{{ super() }}
 {{ macros::navbar() }}
-{% if section.extra.mermaid %}
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ startOnLoad: true });
-</script>
-{% endif %}
 {% endblock script %}

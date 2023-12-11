@@ -109,3 +109,25 @@ header nav {
     }
   }
 }
+
+.prose {
+  // TODO: h1-h3 margin/padding is a bit much
+  // Same for bullet lists probably
+
+  .borderless table {
+    border: none;
+    // max-width: 75%;
+
+    thead:empty,
+    tr:empty,
+    th:empty {
+      display: none
+    }
+
+    tr,
+    td {
+      border: none;
+      line-height: 1.5;
+    }
+  }
+}

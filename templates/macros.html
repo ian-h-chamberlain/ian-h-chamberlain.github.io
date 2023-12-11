@@ -38,12 +38,12 @@
           modify = keepExpanded ? 'remove' : 'add';
           toggler.classList.toggle('keep-expanded');
           break;
-        case 'mouseover':
+        case 'mouseenter':
           if (keepExpanded) {
             return;
           }
           break;
-        case 'mouseout':
+        case 'mouseleave':
           if (keepExpanded || !expanded) {
             return;
           }
@@ -56,8 +56,19 @@
       });
     };
 
-    toggler.addEventListener('mouseover', handler);
-    toggler.addEventListener('mouseout', handler);
+    nav.addEventListener('mouseenter', handler);
+    nav.addEventListener('mouseleave', handler);
+
+    // If we detect a touch event, remove the automatic hover expansion
+    // as it makes the nav bar difficult to tap correctly. Touch users can still
+    // expand the nav bar by tapping the |> directly.
+    const deregister = () => {
+      nav.removeEventListener('mouseenter', handler);
+      nav.removeEventListener('mouseleave', handler);
+      document.removeEventListener('touchstart', deregister);
+    };
+    document.addEventListener('touchstart', deregister);
+
     onClickOrTap(toggler, handler);
   }
 
