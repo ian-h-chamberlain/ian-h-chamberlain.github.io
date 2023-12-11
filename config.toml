@@ -37,6 +37,7 @@ incididunt ut labore et dolore magna aliqua.
 avatar = "images/avatar.png"
 links = [
     { name = "GitHub", icon = "github", url = "https://github.com/ian-h-chamberlain" },
+    { name = "itch", icon = "itchio-logo-textless", url = "https://ian-h-chamberlain.itch.io" },
     { name = "Email", icon = "email", url = "mailto:contact@ian-h-chamberlain.com" },
 ]
 
