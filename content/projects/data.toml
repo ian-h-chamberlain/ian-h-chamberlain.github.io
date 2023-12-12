@@ -1,3 +1,14 @@
+# TODO: do I want this as "projects" or "open-source"?
+[[project]]
+name = "Rust3DS"
+desc = ""
+tags = ["rust", "homebrew"]
+links = [
+    { name = "ctru-rs", url = "https://rust3ds.github.io/ctru-rs/" },
+    { name = "citro3d-rs", url = "https://rust3ds.github.io/citro3d-rs/" },
+    { name = "GitHub", url = "https://github.com/rust3ds" },
+]
+
 [[project]]
 name = "Pist Off"
 desc = """[
@@ -25,17 +36,6 @@ tags = ["godot", "game", "jam"]
 links = [
     { name = "itch.io", url = "https://ian-h-chamberlain.itch.io/stars-exhumed" },
     { name = "GitHub", url = "https://github.com/ian-h-chamberlain/stars-exhumed" },
-]
-
-# TODO: do I want this as "projects" or "open-source"?
-[[project]]
-name = "Rust3DS"
-desc = ""
-tags = ["rust", "homebrew"]
-links = [
-    { name = "ctru-rs", url = "https://rust3ds.github.io/ctru-rs/" },
-    { name = "citro3d-rs", url = "https://rust3ds.github.io/citro3d-rs/" },
-    { name = "GitHub", url = "https://github.com/rust3ds" },
 ]
 
 [[project]]

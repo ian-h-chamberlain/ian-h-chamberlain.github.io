@@ -4,7 +4,6 @@
 body {
   // TODO: nav bar wraps kinda weird on mobile, since my name is long and folding is disabled.
   header nav {
-    --toggle-animation-duration: 0.4s;
 
     overflow: auto;
     display: inline-flex;
@@ -21,6 +20,8 @@ body {
       flex-shrink: 100;
       text-overflow: "…";
     }
+
+    --toggle-animation-duration: 0.4s;
 
     #toggler {
       font-size: 0.75em;
@@ -55,23 +56,26 @@ body {
       flex-grow: 3;
 
       opacity: 0;
-      width: 0;
+      max-width: 0;
       margin: 0;
       overflow: hidden;
 
-      transition: opacity ease, width ease, margin ease;
-      transition-duration: var(--toggle-animation-duration);
+      transition: opacity ease, max-width ease, margin ease;
+      transition-duration:  var(--toggle-animation-duration);
       transition-delay: 0;
 
+      --max-fold-width: 10em;
+
       &.shown-custom {
+        max-width: var(--max-fold-width);
         transition-delay: 0, var(--toggle-animation-duration), var(--toggle-animation-duration);
-        transition-duration: var(--toggle-animation-duration), calc(3*var(--toggle-animation-duration));
+        transition-duration:  var(--toggle-animation-duration), var(--toggle-animation-duration);
       }
 
       &.wrap,
       &.shown-custom {
         opacity: 1;
-        width: initial;
+        max-width: var(--max-fold-width);
 
         &.wrap-separator {
           // The default is set for a comma-separated list like `a, b, c`,
