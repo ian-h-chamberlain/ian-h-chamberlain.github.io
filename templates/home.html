@@ -1,0 +1,60 @@
+{% extends "serene/templates/home.html" %}
+
+{#
+    Ugh, it's annoying to have to copy the entire {% block content %}
+    just to effectively do this:
+        {% set bio = config.extra.bio | markdown | safe %}
+
+    Tera doesn't seem to provide a way to override/set object attributes before
+    extending a template, and the serene theme doesn't have any smaller blocks.
+    Maybe they would accept a PR upstream, idk
+#}
+
+{% block content %}
+<div id="wrapper">
+  <main>
+    <section id="info">
+      {% block info %}
+      <img src="{{ config.extra.avatar }}" alt="avatar">
+      <div id="text">
+        <div>
+          <span id="name">{{ config.extra.name }}</span>
+          {% if config.extra.display_id -%}
+          <span id="id">@{{ config.extra.id }}</span>
+          {% endif -%}
+        </div>
+        <div id="bio"> {{ config.extra.bio | markdown | safe }} </div>
+      </div>
+      {%endblock info%}
+    </section>
+    <section id="links">
+      <div id="left">
+        {% for section in config.extra.sections %}
+        <a href="{{ section.path }}" {% if section.is_external %}target="_blank" rel='noreferrer noopener'{% endif %}>{{ section.name }}</a>
+        {% endfor %}
+      </div>
+      <div id="right">
+        {% for link in config.extra.links -%}
+        <a href="{{ link.url }}" aria-label="{{ link.name }}" target="_blank" rel='noreferrer noopener'>
+          {% set icon_path = "static/icon/" ~ link.icon ~ ".svg" %}
+          {% set icon = load_data(path=icon_path) %}
+          {{ icon | safe }}
+        </a>
+        {% endfor %}
+        {% set moon_icon = load_data(path="static/icon/moon.svg") %}
+        {% set sun_icon = load_data(path="static/icon/sun.svg") %}
+        <button id="theme-toggle" aria-label="theme switch" data-moon-icon="{{ moon_icon }}" data-sun-icon="{{ sun_icon }}">
+          {{ moon_icon | safe }}
+        </button>
+      </div>
+    </section>
+    {% if config.extra.homepage_layout == 'about' %}
+      <section id="brief" class="prose">
+        {{ section.content | trim | safe }}
+      </section>
+    {% else %}
+      {{ throw(message='need to copy "list" layout from parent template') }}
+    {% endif %}
+  </main>
+</div>
+{% endblock content %}

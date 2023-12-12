@@ -32,9 +32,10 @@ name = "Ian H. Chamberlain"
 id = "ian-h-chamberlain"
 # TODO: see if we can put newlines in here somehow. Also not sure if I like the brackets
 # Also may want to hold off on pronouns at first publish?
-bio = """(they/them)
-
-[ software engineer | game developer | ??? ]"""
+bio = """
+(they/them)<br/>
+[ software engineer | game developer | ??? ]
+"""
 
 avatar = "images/avatar.png"
 links = [
@@ -43,7 +44,7 @@ links = [
     { name = "Email", icon = "email", url = "mailto:contact@ian-h-chamberlain.com" },
 ]
 
-homepage_layout = "about" # "about" | "list"
+homepage_layout = "about" # | "list"
 
 sections = [
     # TODO: not 100% sure on the name "experience". "work"? "career"? "background"? "resume"?
