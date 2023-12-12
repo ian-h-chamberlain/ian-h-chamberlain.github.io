@@ -1,0 +1,6 @@
+{% set img = resize_image(path=path, op="fit_width", width=width) %}
+{#
+  vscode simple browser appears to prefer relative paths to the full URL,
+  and it seems a bit cleaner to me as well.
+#}
+<img src="{{ img.static_path | trim_start_matches(pat='static') }}" alt="{{ alt }}">

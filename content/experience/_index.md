@@ -13,7 +13,7 @@ lang = "en"
 
 ### Programming Languages
 
-{% borderless_table(attrs=['style="max-width: 75%"', 'align="center"']) %}
+{% borderless_table(max_width="75%", align="center") %}
 |      |    |        |     |     |
 | :--- | :- | :----- | :-- | :-- |
 | Rust | Go | Python | C++ | Bash |
@@ -22,11 +22,11 @@ lang = "en"
 
 ### Technologies / Frameworks
 
-{% borderless_table(attrs=['style="max-width: 75%"', 'align="center"']) %}
-|         |           |       |             |
-| :------ | :----     | :---- | :---------- |
-| Linux   | RPM / DNF | Git   | Docker      |
-| pytest | GoogleTest | Godot | Bevy Engine |
+{% borderless_table(max_width="75%", align="center") %}
+|         |           |        |             |           |
+| :------ | :-------- | :----- | :---------- | :-------- |
+| Linux   | Git       | Docker | Bazel       | RPM / DNF |
+| pytest | GoogleTest | Godot  | Bevy Engine |           |
 <!-- TODO: take stock of work stuff and add here -->
 {% end %}
 

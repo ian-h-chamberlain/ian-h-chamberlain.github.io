@@ -1,30 +1,51 @@
 [[project]]
-name = "Sample Project"
-desc = """![Pist Off](https://img.itch.zone/aW1nLzExODEzMzMyLnBuZw==/315x250%23c/KHKgeD.png)
+name = "Pist Off"
+desc = """[
+    {{ image(alt="Pist Off", path="/images/pist-off.png", width=150) }}
+](https://ian-h-chamberlain.itch.io/pist-off)
 
-Some little `project` I worked on. This line has a different style
-compared to \\<li\\> subsquent `inline` code.
+A game I made in nine days for [Bevy Jam #3](https://itch.io/jam/bevy-jam-3)
+(theme: "side effects") with the [Bevy Game Engine](https://bevyengine.org).
 
-Code:
-- `regular`
-- _`ital`_
-- **`bold`**
-
-Prose:
-- regular
-- _ital_
-- **bold**
-
-```
-foo => bar()
-// baz
-## bim
-<=  >= ++
-->
-```
+The objective of the game is to push each colored block back into place inside
+the cube --- but doing so cause have unwanted side effects. Once all the blocks
+are in place, the difficulty will increase and the next level begins.
 """
-tags = ["sample", "test"]
+tags = ["bevy", "rust", "game", "jam"]
 links = [
-    { name = "Github", url = "https://github.com/ian-h-chamberlain/dotfiles" },
-    { name = "itch.io", url = "ian-h-chamberlain.itch.io" },
+    { name = "itch.io", url = "https://ian-h-chamberlain.itch.io/pist-off" },
+    { name = "GitHub", url = "https://github.com/ian-h-chamberlain/pist-off" },
+]
+
+[[project]]
+name = "[ɐ⊅] — Stars Exhumed"
+# TODO
+desc = ""
+tags = ["godot", "game", "jam"]
+links = [
+    { name = "itch.io", url = "https://ian-h-chamberlain.itch.io/stars-exhumed" },
+    { name = "GitHub", url = "https://github.com/ian-h-chamberlain/stars-exhumed" },
+]
+
+# TODO: do I want this as "projects" or "open-source"?
+[[project]]
+name = "Rust3DS"
+desc = ""
+tags = ["rust", "homebrew"]
+links = [
+    { name = "ctru-rs", url = "https://rust3ds.github.io/ctru-rs/" },
+    { name = "citro3d-rs", url = "https://rust3ds.github.io/citro3d-rs/" },
+    { name = "GitHub", url = "https://github.com/rust3ds" },
+]
+
+[[project]]
+name = "corewars"
+# TODO
+desc = ""
+tags = ["rust", "redcode", "mars"]
+links = [
+    { name = "corewa.rs", url = "https://corewa.rs/" },
+    { name = "crates.io", url = "https://crates.io/crates/corewars" },
+    { name = "vscode-redcode", url = "" },                              # TODO
+    { name = "GitHub", url = "https://github.com/corewa-rs/corewars" },
 ]
