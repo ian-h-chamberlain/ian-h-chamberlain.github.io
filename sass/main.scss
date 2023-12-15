@@ -2,9 +2,7 @@
 @import "../themes/serene/sass/main";
 
 body {
-  // TODO: nav bar wraps kinda weird on mobile, since my name is long and folding is disabled.
   header nav {
-
     overflow: auto;
     display: inline-flex;
     margin-right: 0.3em;

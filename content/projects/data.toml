@@ -30,8 +30,19 @@ links = [
 
 [[project]]
 name = "[ɐ⊅] — Stars Exhumed"
-# TODO
-desc = ""
+desc = """[
+    {{ image(alt="Pist Off", path="/images/stars-exhumed.png", width=150) }}
+](https://ian-h-chamberlain.itch.io/stars-exhumed)
+
+A game made for the [Godot Wild Jam #57](https://itch.io/jam/godot-wild-jam-57)
+(theme: "forgotten knowledge").
+
+In this game, you seek to rediscover the lost
+powers of the constellations. First, find spells by drawing constellations in
+the night sky. Later, you can draw the same shapes to cast those spells.
+Blast apart the incoming asteroids to protect your planet!
+
+"""
 tags = ["godot", "game", "jam"]
 links = [
     { name = "itch.io", url = "https://ian-h-chamberlain.itch.io/stars-exhumed" },
