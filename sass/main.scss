@@ -110,6 +110,10 @@ body {
       margin: 0 0 1em 1em;
       border: 2px solid var(--text-pale-color);
     }
+
+    .footnote-definition-label:after {
+      content: " ";
+    }
   }
 
   :not(pre)>code {

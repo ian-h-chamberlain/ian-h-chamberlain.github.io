@@ -50,13 +50,19 @@ links = [
 ]
 
 [[project]]
-name = "corewars"
-# TODO
-desc = ""
+name = "corewa-rs"
+desc = """
+A partial implementation of [Core War](https://en.wikipedia.org/wiki/Core_War),
+a programming battle game, in Rust. It can load and assemble redcode programs
+(warriors), as well as run a single warrior in a Memory Array Redcode Simulator
+(MARS).
+
+`vscode-redcode` is a companion VSCode extension for syntax highlighting redcode.
+"""
 tags = ["rust", "redcode", "mars"]
 links = [
     { name = "corewa.rs", url = "https://corewa.rs/" },
-    { name = "crates.io", url = "https://crates.io/crates/corewars" },
-    { name = "vscode-redcode", url = "" },                              # TODO
+    # TODO: crates.io?
+    { name = "vscode-redcode", url = "https://marketplace.visualstudio.com/items?itemName=corewa-rs.redcode" },
     { name = "GitHub", url = "https://github.com/corewa-rs/corewars" },
 ]

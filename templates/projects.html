@@ -1,5 +1,23 @@
 {% extends "serene/templates/projects.html" %}
 
+{%block script%}
+{{ super() }}
+  {#
+    Workaround for https://github.com/getzola/zola/issues/1070
+    I'm not sure if footnotes were ever intended to work on the project page
+    in this theme but :shrug: seems decent enough like this
+  #}
+  <script>
+    document.addEventListener('DOMContentLoaded', (_event) => {
+      for (const footnote of document.getElementsByClassName('footnote-definition')) {
+        const label = footnote.firstElementChild;
+        const definition = label.nextSibling;
+        definition.insertBefore(footnote.removeChild(label), definition.firstChild);
+      }
+    });
+  </script>
+{% endblock script %}
+
 {#
   Again, ideally would not have to redo the whole block just to replace
   one little div, but I don't know how to do it otherwise...
