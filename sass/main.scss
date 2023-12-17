@@ -15,8 +15,8 @@ body {
     }
 
     a:first-of-type {
-      flex-shrink: 100;
-      text-overflow: "…";
+      flex-shrink: 20;
+      text-overflow: ellipsis;
     }
 
     --toggle-animation-duration: 0.4s;
