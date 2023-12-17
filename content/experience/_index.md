@@ -6,7 +6,6 @@ template = "prose.html"
 [extra]
 lang = "en"
 +++
-
 <!-- markdownlint-disable no-trailing-punctuation -->
 
 ## Skills
@@ -22,11 +21,11 @@ lang = "en"
 
 ### Technologies / Frameworks
 
-{% borderless_table(max_width="75%", align="center") %}
-|         |           |        |             |           |
-| :------ | :-------- | :----- | :---------- | :-------- |
-| Linux   | Git       | Docker | Bazel       | RPM / DNF |
-| pytest | GoogleTest | Godot  | Bevy Engine |           |
+{% borderless_table(max_width="85%", align="center") %}
+|                 |            |        |             |           |
+| :-------------- | :--------- | :----- | :---------- | :-------- |
+| Linux           | Git        | Docker | Bazel       | RPM / DNF |
+| Robot Framework | Pytest  | GoogleTest | Godot  | Bevy Engine |
 <!-- TODO: take stock of work stuff and add here -->
 {% end %}
 
@@ -34,38 +33,34 @@ lang = "en"
 
 ### Juniper Networks, Inc. (formerly 128 Technology, acquired Nov. 2020)
 
-<!-- TODO need to double check dates of promotions etc.
-Also... maybe not really worth mentioning "Systems" on here, idk
--->
 {% borderless_table() %}
-|                                |                       |
-| :----------------------------- | -------------------: |
-| Software Engineer IV, Systems  | _Jul. 2022--present_  |
-| Software Engineer III, Systems | _???--Jul. 2022_ |
-| Software Engineer II, Systems  | _???_ |
-| Software Engineer I, Systems   | _Jun. 2017--???_  |
+|                       |                        |
+| :-------------------- | ---------------------: |
+| Software Engineer IV  | _Jul. 2021--present_   |
+| Software Engineer III | _Nov. 2020--Jul. 2021_ |
+| Software Engineer II  | _Jan. 2019--Nov. 2020_ |
+| Software Engineer I   | _Jun. 2017--Jan. 2019_ |
 {% end %}
 
-<!-- Lot of text here, might want to clean it up just a bit... -->
+#### Responsibilities
 
-- Developed features for installation, deployment, and configuration of the Session
-  Smart Router (SSR) software platform.
-- Troubleshooted customer SSR deployments and work with field engineers to find
+- Develop features for installation, deployment, and configuration of the
+  Session Smart Router (SSR) software platform.
+- Troubleshoot customer SSR deployments and work with field engineers to find
   short-term solutions to software problems and implement long-term bugfixes.
-- Maintained and published several auxiliary packages to support installation
-  of SSR software
-  - Took ownership of a legacy application responsible for installation of the
-    SSR via RPM packaging
-  - Developed a customer-specific application for managing SSR deployment and
-    upgrades on a large scale with Docker Compose
-- Led technical design of new applications and large feature development
-  - Led the design of a daemon application responsible for managing SSR firmware
+- Maintain and publish auxiliary packages to support installation of SSR software.
+  - Own a legacy application responsible for installation of the
+    SSR via RPM packaging.
+  - Develop a customer-specific application for managing SSR deployment and
+    upgrades on a large scale with Docker Compose.
+- Lead technical design of new applications and large feature development
+  - Lead the design of a daemon application responsible for managing SSR firmware
     upgrades and upgrades of auxiliary application packages to a device
-  - Contributed to the design of integrating SSR software with the Mist cloud,
-    especially cloud-driven firmware upgrades
-- Onboarded and mentored junior engineers in best practices and give advice on
-  technical design decisions
-- Review code and design documents written by other members of my team
+  - Contribute to the design of integrating SSR software with the Mist cloud,
+    especially cloud-driven firmware upgrades.
+- Onboard and mentor junior engineers in best practices and give advice on
+  technical design decisions.
+- Review code and design documents written by peers.
 
 ### STEP Tools, Inc.
 

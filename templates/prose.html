@@ -1,7 +1,7 @@
 {% extends "serene/templates/prose.html" %}
-{% import "macros.html" as macros %}
+{% import "navbar.html" as navbar %}
 
 {% block script %}
 {{ super() }}
-{{ macros::navbar() }}
+{{ navbar::script() }}
 {% endblock script %}

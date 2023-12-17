@@ -1,7 +1,7 @@
-{% macro navbar() %}
+{% macro script() %}
 <script>
   // https://stackoverflow.com/a/77517523/14436105
-  const onClickOrTap = (element, handler) => {
+  function onClickOrTap(element, handler) {
     let touchMoved = false;
 
     element.addEventListener('touchstart', () => touchMoved = false);
@@ -21,7 +21,10 @@
     if (!nav) return;
     const toggler = nav.querySelector('#toggler');
     if (!toggler) return;
+    const homeLink = nav.querySelector('a:first-of-type');
+    if (!homeLink) return;
     const foldItems = nav.querySelectorAll('.fold');
+
 
     document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => toggler.classList.add('active'), 300);
@@ -54,6 +57,7 @@
       foldItems.forEach(item => {
         item.classList[modify]('shown-custom');
       });
+      homeLink.classList.toggle('expanded');
     };
 
     nav.addEventListener('mouseenter', handler);

@@ -127,12 +127,12 @@ body {
   }
 
   .prose {
-    // TODO: h1-h3 margin/padding is a bit much
-    // Same for bullet lists probably
+    h2:first-of-type {
+      padding-top: 1em;
+    }
 
     .borderless table {
       border: none;
-      // max-width: 75%;
 
       thead:empty,
       tr:empty,
