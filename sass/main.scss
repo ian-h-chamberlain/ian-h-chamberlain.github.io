@@ -84,8 +84,19 @@ body {
     }
   }
 
+  .home footer {
+    max-width: var(--homepage-max-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   section#info #bio {
-    line-height: 1.5;
+    line-height: 2.0em;
+
+    p {
+      // For pronouns:
+      // margin-top: 0;
+    }
   }
 
   // Seems that non-prose pages don't have this set by default

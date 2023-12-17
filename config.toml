@@ -31,17 +31,17 @@ anchors = "on"
 [extra]
 name = "Ian H. Chamberlain"
 id = "ian-h-chamberlain"
-# TODO: see if we can put newlines in here somehow. Also not sure if I like the brackets
-# Also may want to hold off on pronouns at first publish?
 bio = """
-(they/them)<br/>
-[ software engineer | game developer | ??? ]
+<!-- (they/them)<br /> -->
+[ software engineer | game developer | homebrew enthusiast ]
 """
 
 avatar = "images/avatar.png"
 links = [
     { name = "GitHub", icon = "github", url = "https://github.com/ian-h-chamberlain" },
     { name = "itch", icon = "itchio-logo-textless", url = "https://ian-h-chamberlain.itch.io" },
+    # TODO: once it's updated:
+    # { name = "LinkedIn", icon = "linkedin-box-fill", url = "https://www.linkedin.com/in/ian-h-chamberlain" },
     { name = "Email", icon = "email", url = "mailto:contact@ian-h-chamberlain.com" },
 ]
 

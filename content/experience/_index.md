@@ -21,7 +21,7 @@ lang = "en"
 
 ### Technologies / Frameworks
 
-{% borderless_table(max_width="85%", align="center") %}
+{% borderless_table(max_width="90%", align="center") %}
 |                 |        |            |        |             |
 | :-------------- | :----- | :--------- | :----- | :---------- |
 | Linux           | Git    | Docker     | Bazel  | RPM / DNF   |

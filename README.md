@@ -13,19 +13,19 @@
     Ended up just overriding the style instead.
   - [x] Adjust asymmetrical nav bar separator
   - [x] Still looks kinda bad when expanded on mobile, and hover acts weird
-- [ ] Decide separate `/about` page or nah?
+- [x] Decide separate `/about` page or nah?
 
 ## General TODOs
 
-- [ ] Fill out actual resume information, lol
-  - [ ] work experience / education
-  - [ ] open source projects
-  - [ ] game jam projects
+- [x] Fill out actual resume information, lol
+  - [x] work experience / education
+  - [-] open source projects
+  - [x] game jam projects
   - [ ] PRONOUNCE!?!? and other contact info
-    - [ ] email I guess... maybe `contact[at]ian-h-chamberlain.com` or `ian[at]` instead of my creal one?
-       - need to figure out why redirect isn't working...
-    - [ ] Github
+    - [x] email I guess... maybe `contact[at]ian-h-chamberlain.com` or `ian[at]` instead of my real one?
+       - [x] need to figure out why redirect isn't working...
+    - [x] Github
     - [ ] LinkedIn (once that's up to date)
-    - [ ] ??? I don't have a "professional" twitter or masto but should I consider?
+- [ ] Legal / LICENSE page
 - [ ] Set up domain name
 - [ ] Deploy to github pages!
