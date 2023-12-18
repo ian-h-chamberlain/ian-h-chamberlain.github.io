@@ -38,8 +38,8 @@ lang = "en"
 | :-------------------- | ---------------------: |
 | Software Engineer IV  | _Jul. 2021--present_   |
 | Software Engineer III | _Nov. 2020--Jul. 2021_ |
-| Software Engineer II  | _Jan. 2019--Nov. 2020_ |
-| Software Engineer I   | _Jun. 2017--Jan. 2019_ |
+| Software Engineer II  | _Mar. 2019--Nov. 2020_ |
+| Software Engineer I   | _Jun. 2017--Mar. 2019_ |
 {% end %}
 
 - Developed features for installation, deployment, and configuration of the
@@ -69,9 +69,9 @@ lang = "en"
 {% end %}
 
 - Developed a full-stack 3D web application to simulate machining parts.
-- Integrated existing native C++ bindings into a Node.js backend and a three.js
+- Integrated existing native C++ bindings into a Node.js backend and a Three.js
   frontend renderer.
-- Won 2nd place in the MTConnect Student Challenge.
+- Won 2nd place in the MTConnect Student Challenge ([submission page](https://devpost.com/software/nc-js)).
 
 ### [Rensselaer Polytechnic Institute](https://rpi.edu/)
 
@@ -108,5 +108,7 @@ B.S. in Computer Science / Games and Simulation Arts and Sciences
 
 Dean’s List: Fall 2013, Spring 2014, Fall 2014<br/>
 Dean’s Honor List: Fall 2015, Spring 2016, Fall 2016
+
+<!-- TODO: mention undergraduate research, GSAS projects, etc. -->
 
 3.75 GPA

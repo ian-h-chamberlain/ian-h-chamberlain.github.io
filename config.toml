@@ -39,7 +39,7 @@ bio = """
 avatar = "images/avatar.png"
 links = [
     { name = "GitHub", icon = "github", url = "https://github.com/ian-h-chamberlain" },
-    { name = "itch", icon = "itchio-logo-textless", url = "https://ian-h-chamberlain.itch.io" },
+    { name = "itch.io", icon = "itchio-logo-textless", url = "https://ian-h-chamberlain.itch.io" },
     # TODO: once it's updated:
     # { name = "LinkedIn", icon = "linkedin-box-fill", url = "https://www.linkedin.com/in/ian-h-chamberlain" },
     { name = "Email", icon = "email", url = "mailto:contact@ian-h-chamberlain.com" },

@@ -36,7 +36,7 @@ body {
 
       --toggler-initial: translate(0em, -0.1em);
 
-      transition: transform var(--toggle-animation-duration) ease;
+      transition: transform var(--toggle-animation-duration) ease-in-out;
       transform: var(--toggler-initial);
 
       &.active {
@@ -58,7 +58,8 @@ body {
       margin: 0;
       overflow: hidden;
 
-      transition: opacity ease, max-width ease, margin ease;
+      transition-property: opacity, max-width, margin;
+      transition-timing-function: ease-out;
       transition-duration:  var(--toggle-animation-duration);
       transition-delay: 0;
 
@@ -68,6 +69,7 @@ body {
         max-width: var(--max-fold-width);
         transition-delay: 0, var(--toggle-animation-duration), var(--toggle-animation-duration);
         transition-duration:  var(--toggle-animation-duration), var(--toggle-animation-duration);
+      transition-timing-function: ease-in;
       }
 
       &.wrap,
@@ -140,6 +142,21 @@ body {
   .prose {
     h2:first-child {
       padding-top: 1em;
+    }
+
+    // Normally you'd probably have a :not(href) selector here to avoid styling
+    // internal links the same way, but I don't think I actually have any internal
+    // links (especially not code) so 🤷 guess it will be fine like this
+    :not(.footnote-reference)>a>code {
+      padding-right: 0;
+
+      &::after {
+        padding-left: 4px;
+        content: "↗";
+        text-underline-offset: -1em;
+        font-size: medium;
+        vertical-align: super;
+      }
     }
 
     .borderless table {
