@@ -32,7 +32,7 @@ anchors = "on"
 name = "Ian H. Chamberlain"
 id = "ian-h-chamberlain"
 bio = """
-<!-- (they/them)
+<!--
 <br/> -->
 [ software engineer | game developer | homebrew enthusiast ]
 """
