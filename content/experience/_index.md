@@ -71,7 +71,8 @@ lang = "en"
 - Developed a full-stack 3D web application to simulate machining parts.
 - Integrated existing native C++ bindings into a Node.js backend and a Three.js
   frontend renderer.
-- Won 2nd place in the MTConnect Student Challenge ([submission page](https://devpost.com/software/nc-js)).
+- Won 2nd place in the MTConnect Student Challenge
+  [submission page](https://devpost.com/software/nc-js)).
 
 ### [Rensselaer Polytechnic Institute](https://rpi.edu/)
 
@@ -106,7 +107,8 @@ lang = "en"
 
 B.S. in Computer Science / Games and Simulation Arts and Sciences
 
-Dean’s List: Fall 2013, Spring 2014, Fall 2014<br/>
+Dean’s List: Fall 2013, Spring 2014, Fall 2014
+<br/>
 Dean’s Honor List: Fall 2015, Spring 2016, Fall 2016
 
 <!-- TODO: mention undergraduate research, GSAS projects, etc. -->

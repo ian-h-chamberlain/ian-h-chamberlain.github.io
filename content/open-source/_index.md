@@ -28,11 +28,9 @@ The other maintainers of Rust3DS and I have worked to make developing 3DS homebr
 in Rust as positive an experience as we can. Although the project is still
 fairly young, we have made a good amount of progress towards that goal:
 
-- Rust support for the
-  [armv6k-nintendo-3ds](https://doc.rust-lang.org/rustc/platform-support/armv6k-nintendo-3ds.html)
-  target has been delivered upstream to the Rust compiler! There is also support
-  for the majority of the standard library. This was our biggest milestone, and
-  involved a number of changes to `libc`, `rustc`, and `std`.
+- Rust support for the [armv6k-nintendo-3ds] target has been delivered upstream
+  to the Rust compiler! There is also support for the majority of the standard library.
+  This was our biggest milestone, and involved a number of changes to `libc`, `rustc`, and `std`.
 - [`cargo-3ds`](https://github.com/rust3ds/cargo-3ds) is a CLI tool for initializing
   new Rust3DS projects, and building and testing executables on the 3DS.
   The goal is to make it as simple as building with `cargo` like any other Rust project.
@@ -46,8 +44,10 @@ fairly young, we have made a good amount of progress towards that goal:
   is a helper that runs [Citra](https://citra-emu.org) in a container
   in order to run test executables in a way that's suitable for use in CI pipelines.
   Part of this work involved implementing changes to Citra upstream to leverage
-  the [GDB File I/O protocol](https://sourceware.org/gdb/current/onlinedocs/gdb.html/File_002dI_002fO-Overview.html#File_002dI_002fO-Overview)
-  for test output.
+  the [GDB File I/O protocol] for test output.
+
+[armv6k-nintendo-3ds]: https://doc.rust-lang.org/rustc/platform-support/armv6k-nintendo-3ds.html
+[GDB File I/O protocol]: https://sourceware.org/gdb/current/onlinedocs/gdb.html/File_002dI_002fO-Overview.html#File_002dI_002fO-Overview
 
 ## Miscellaneous contributions
 
