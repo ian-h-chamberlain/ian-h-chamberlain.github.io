@@ -4,7 +4,15 @@
 [[project]]
 name = "Pist Off"
 desc = """[
-    {{ image(alt="Pist Off", path="/images/pist-off.png", width=150) }}
+    {{
+        image(
+            alt="Several blocks of different colors misaligned inside a larger
+                cube-shaped wooden frame.",
+            title="Pist Off",
+            path="/images/pist-off.png",
+            width=150
+        )
+    }}
 ](https://ian-h-chamberlain.itch.io/pist-off)
 
 A game I made in nine days for [Bevy Jam #3](https://itch.io/jam/bevy-jam-3)
@@ -26,7 +34,15 @@ links = [
 [[project]]
 name = "[ɐ⊅] — Stars Exhumed"
 desc = """[
-    {{ image(alt="Pist Off", path="/images/stars-exhumed.png", width=150) }}
+    {{
+        image(
+            title="Stars Exhumed",
+            alt="A screenshot of a HUD including a parchment and some stars
+                overlaying a first-person view of mountains against a starry sky.",
+            path="/images/stars-exhumed.png",
+            width=150
+        )
+    }}
 ](https://ian-h-chamberlain.itch.io/stars-exhumed)
 
 A game made in nine days for the [Godot Wild Jam #57](https://itch.io/jam/godot-wild-jam-57)

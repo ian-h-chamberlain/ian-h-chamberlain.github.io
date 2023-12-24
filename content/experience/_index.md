@@ -12,7 +12,7 @@ lang = "en"
 
 ### Programming Languages
 
-{% borderless_table(max_width="75%", align="center") %}
+{% borderless_table() %}
 |      |    |        |     |     |
 | :--- | :- | :----- | :-- | :-- |
 | Rust | Go | Python | C++ | Bash |
@@ -21,12 +21,12 @@ lang = "en"
 
 ### Technologies / Frameworks
 
-{% borderless_table(max_width="90%", align="center") %}
+{% borderless_table() %}
 |                 |        |            |        |             |
 | :-------------- | :----- | :--------- | :----- | :---------- |
 | Linux           | Git    | Docker     | Bazel  | RPM / DNF   |
 | Robot Framework | Pytest | GoogleTest | Godot  | Bevy Engine |
-<!-- TODO: take stock of work stuff and add here -->
+<!-- TODO: take stock of more work stuff and add here -->
 {% end %}
 
 ## Work Experience
@@ -43,7 +43,8 @@ lang = "en"
 {% end %}
 
 - Developed features for installation, deployment, and configuration of the
-  Session Smart Router (SSR) software platform.
+  [Session Smart Router](https://www.juniper.net/us/en/products/routers/session-smart-router.html)
+  (SSR) software platform.
 - Debugged problems with customer SSR deployments and worked with field engineers
   to find short-term solutions to software problems and implemented long-term bugfixes.
 - Maintained and published auxiliary packages to support installation of SSR software.
@@ -59,6 +60,7 @@ lang = "en"
 - Onboarded and mentored junior engineers in best practices and gave advice on
   technical design decisions.
 - Reviewed code and design documents written by peers.
+- Interviewed candidates and provided feedback in the hiring process.
 
 ### [STEP Tools, Inc.](https://www.steptools.com/)
 
@@ -72,9 +74,9 @@ lang = "en"
 - Integrated existing native C++ bindings into a Node.js backend and a Three.js
   frontend renderer.
 - Won 2nd place in the MTConnect Student Challenge
-  [submission page](https://devpost.com/software/nc-js)).
+  ([submission page](https://devpost.com/software/nc-js)).
 
-### [Rensselaer Polytechnic Institute](https://rpi.edu/)
+### [Rensselaer Polytechnic Institute]
 
 {% borderless_table() %}
 |                             |                        |
@@ -94,7 +96,7 @@ lang = "en"
 | Intern, Leadership Development and Technical Vitality | _Jun. 2015--Aug. 2015_ |
 {% end %}
 
-- Developed educational games for use in company technical training program.
+- Developed two educational games for use in company technical training program.
 - Assisted in database design for migration to a new learning management system.
 
 ## Education
@@ -102,7 +104,7 @@ lang = "en"
 {% borderless_table() %}
 |                                                      |                       |
 | :--------------------------------------------------- | --------------------: |
-| [Rensselaer Polytechnic Institute](https://rpi.edu/) |  _Aug. 2013--May 2017_ |
+| [Rensselaer Polytechnic Institute] |  _Aug. 2013--May 2017_ |
 {% end %}
 
 B.S. in Computer Science / Games and Simulation Arts and Sciences
@@ -111,6 +113,6 @@ Dean’s List: Fall 2013, Spring 2014, Fall 2014
 <br/>
 Dean’s Honor List: Fall 2015, Spring 2016, Fall 2016
 
-<!-- TODO: mention undergraduate research, GSAS projects, etc. -->
-
 3.75 GPA
+
+[Rensselaer Polytechnic Institute]: https://www.rpi.edu/
