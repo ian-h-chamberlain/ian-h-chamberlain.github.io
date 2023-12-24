@@ -14,10 +14,10 @@ All opinions are my own.
 ## Software
 
 This site is generated using [Zola](https://www.getzola.org), which is licensed
-under the [MIT License](/zola/LICENSE).
+under the [MIT License](/zola/LICENSE.txt).
 <br/>
 The [serene](https://github.com/isunjn/serene) theme for Zola is also
-licensed under the [MIT License](/serene/LICENSE).
+licensed under the [MIT License](/serene/LICENSE.txt).
 
 ## Fonts
 
@@ -25,4 +25,4 @@ licensed under the [MIT License](/serene/LICENSE).
 the [SIL Open Font License](/font/EncodeSans/OFL.txt).
 <br/>
 [Monaspace](https://monaspace.githubnext.com/) is also licensed under the
-[SIL Open Font License](/font/Monaspace/LICENSE).
+[SIL Open Font License](/font/Monaspace/LICENSE.txt).
