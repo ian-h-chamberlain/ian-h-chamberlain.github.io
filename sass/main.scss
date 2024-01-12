@@ -175,4 +175,66 @@ body {
       }
     }
   }
+
+  .progress {
+    line-height: 1.25em;
+    font-size: small;
+
+    label {
+      &.proficient {
+        color: var(--callout-tip-color);
+      }
+
+      &.experienced {
+        color: var(--callout-question-color);
+      }
+
+      &.familiar {
+        color: var(--callout-important-color);
+      }
+    }
+
+    progress[value] {
+      &.proficient {
+        --progress-value-color: var(--callout-tip-color);
+      }
+
+      &.experienced {
+        --progress-value-color: var(--callout-question-color);
+      }
+
+      &.familiar {
+        --progress-value-color: var(--callout-important-color);
+      }
+    }
+
+    progress[value] {
+      max-width: 6em;
+      height: 0.75em;
+      appearance: none;
+
+      --progress-value-color: var(--primary-color);
+      --progress-background-color: var(--highlight-mark-color);
+      --progress-border-radius: 10px;
+
+      background-color: var(--progress-background-color);
+      border-radius: var(--progress-border-radius);
+      border: none;
+
+      // ugh, what a pain: https://stackoverflow.com/a/75840529/14436105
+      &::-webkit-progress-bar {
+        background-color: var(--progress-background-color);
+        border-radius: var(--progress-border-radius);
+      }
+      &::-webkit-progress-value {
+        background-color: var(--progress-value-color);
+        border-radius: var(--progress-border-radius);
+      }
+
+      &::-moz-progress-bar {
+        background-color: var(--progress-value-color);
+        border-radius: var(--progress-border-radius);
+      }
+    }
+  }
 }

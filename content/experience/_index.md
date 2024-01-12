@@ -12,22 +12,53 @@ lang = "en"
 
 ### Programming Languages
 
-{% borderless_table() %}
-|      |    |        |     |     |
-| :--- | :- | :----- | :-- | :-- |
-| Rust | Go | Python | C++ | Bash |
-<!-- TODO: GDscript?? C#? JS/TS ? -->
-{% end %}
+{{ progress_table(name="langs", data="
 
-### Technologies / Frameworks
+- Rust: 2
+  Go: 2
+  Python: 2
+  C++: 1
+  Bash: 1
 
-{% borderless_table() %}
-|                 |        |            |        |             |
-| :-------------- | :----- | :--------- | :----- | :---------- |
-| Linux           | Git    | Docker     | Bazel  | RPM / DNF   |
-| Robot Framework | Pytest | GoogleTest | Godot  | Bevy Engine |
-<!-- TODO: take stock of more work stuff and add here -->
-{% end %}
+- Javascript: 0
+  TypeScript: 0
+  C#: 0
+  GDScript: 0
+
+") }}
+
+### Technologies
+
+#### Tools / Miscellaneous
+
+{{ progress_table(name="tech", data="
+
+- Linux: 2
+  Git: 2
+  RPM / DNF: 2
+  Bazel: 1
+  Docker: 1
+
+") }}
+
+#### Game Engines
+
+{{ progress_table(name="tech", data="
+
+- Godot: 0
+  Bevy: 0
+  Unity: 0
+  Unreal: 0
+") }}
+
+#### Testing
+
+{{ progress_table(name="tech", max_width="70%", data="
+
+- Pytest: 2
+  Robot Framework: 1
+  GoogleTest: 1
+") }}
 
 ## Work Experience
 

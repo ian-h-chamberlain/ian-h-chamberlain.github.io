@@ -1,0 +1,29 @@
+{% set percents = [35, 60, 85] %}
+{% set levels = ["familiar", "experienced", "proficient"] %}
+
+<div class="borderless progress-table" style="max-width: {{ max_width | default(value='100%') }}">
+  <table>
+    <tbody>
+      {% set data = load_data(format="yaml", literal=data) %}
+      {% for row in data %}
+      <tr>
+        {% for entry_name, level in row %}
+        {% set percent = percents[level] %}
+        {% set level = levels[level] %}
+        {# This ID count is maybe not perfect but hopefully good enough... #}
+        {% set id = "progress-" ~ name ~ "-" ~ entry_name | slugify %}
+
+        <td style="text-align:left">
+          {{ entry_name }}
+          <div class="progress">
+            <progress id="{{ id }}" value="{{ percent }}" max="100" class="{{ level | slugify }}"></progress>
+            <br />
+            <label for="{{ id }}" class="{{ level | slugify }}">{{ level | capitalize }}</label>
+          </div>
+        </td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
