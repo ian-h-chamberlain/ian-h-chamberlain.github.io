@@ -93,11 +93,13 @@ body {
   }
 
   section#info #bio {
-    line-height: 2.0em;
-
     p {
-      // For multiple lines, this looks better:
-      // margin-top: 0;
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+
+    .pronouns {
+      font-size: 0.85em;
     }
   }
 

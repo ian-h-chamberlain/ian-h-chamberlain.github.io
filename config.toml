@@ -32,9 +32,9 @@ anchors = "on"
 name = "Ian H. Chamberlain"
 id = "ian-h-chamberlain"
 bio = """
-<!--
-<br/> -->
-[ software engineer | game developer | homebrew enthusiast ]
+<span class="pronouns">they/them</span>
+
+[ software&nbsp;engineer | game&nbsp;developer | homebrew&nbsp;enthusiast ]
 """
 
 avatar = "images/avatar.png"
@@ -46,10 +46,9 @@ links = [
     { name = "Email", icon = "email", url = "mailto:contact@ian-h-chamberlain.com" },
 ]
 
-homepage_layout = "about" # | "list"
+homepage_layout = "about"
 
 sections = [
-    # TODO: not 100% sure on the name "experience". "work"? "career"? "background"? "resume"?
     { name = "experience", path = "/experience", is_external = false, hidden = false },
     { name = "projects", path = "/projects", is_external = false, hidden = false },
     { name = "open source", path = "/open-source", is_external = false, hidden = false },
