@@ -6,6 +6,7 @@
         "
 >
 
+{% for _ in range(end=columns | default(value=2)) %}| {% endfor %}|
 {{ body }}
 
 </div>
