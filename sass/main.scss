@@ -129,7 +129,7 @@ body {
 
     img {
       float: right;
-      // TODO: can't decide whether to align with the title (-2.5em) or not.
+      // margin-top of -2.5em or so would make this align with title instead of contents
       margin: 0 0 1em 1em;
       border: 2px solid var(--text-pale-color);
     }
