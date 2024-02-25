@@ -16,11 +16,12 @@ body {
 
     a:first-of-type {
       overflow: hidden;
-      flex-shrink: 20;
+      flex-shrink: 10;
     }
 
     a {
       text-overflow: ellipsis;
+      flex-shrink: 5;
     }
 
     --toggle-animation-duration: 0.4s;
@@ -61,7 +62,9 @@ body {
       opacity: 0;
       max-width: 0;
       margin: 0;
+
       overflow: hidden;
+      flex-shrink: 0;
 
       transition-property: opacity, max-width, margin;
       transition-timing-function: ease-out;
@@ -74,7 +77,7 @@ body {
         max-width: var(--max-fold-width);
         transition-delay: 0, var(--toggle-animation-duration), var(--toggle-animation-duration);
         transition-duration:  var(--toggle-animation-duration), var(--toggle-animation-duration);
-      transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
       }
 
       &.wrap,
