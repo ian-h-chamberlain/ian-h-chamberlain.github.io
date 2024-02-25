@@ -3,7 +3,7 @@
 
 body {
   header nav {
-    overflow: auto;
+    overflow: hidden;
     display: inline-flex;
     margin-right: 0.3em;
     white-space: nowrap;
@@ -15,7 +15,11 @@ body {
     }
 
     a:first-of-type {
+      overflow: hidden;
       flex-shrink: 20;
+    }
+
+    a {
       text-overflow: ellipsis;
     }
 
@@ -27,6 +31,7 @@ body {
       // This seems to be required for certain browsers to pick up the ligatures:
       font-feature-settings: "dlig";
 
+      overflow: visible;
       padding-top: 0.3em;
       margin: 0 0.3em 0 0.1em;
 
