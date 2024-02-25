@@ -3,6 +3,14 @@
 
 {% set callout_style = style | default(value="") %}
 
+{#
+  Would be nice if this could somehow be dynamic based on viewport width or
+  something, but that probably involves JS and seems more complicated than I
+  want to deal with, so we'll settle with 4 which looks mostly ok on both mobile
+  and desktop.
+#}
+{% set items_per_row = items_per_row | default(value = 4) %}
+
 {# Basically just copied directly from the shortcode for `note`: #}
 {% if callout_style %}
 {% set class = "callout " ~ callout_style %}
@@ -20,13 +28,19 @@
   <table>
     <tbody>
       {% set data = load_data(format="yaml", literal=data) %}
-      {% for row in data %}
+      {% for entry in data %}
+        {% set index = loop.index0 %}
+        {# Should only be one key/value per entry but this is an easy way to destructure #}
+        {% for entry_name, level in entry %}
+
+          {% if index % items_per_row == 0 %}
       <tr>
-        {% for entry_name, level in row %}
-        {% set percent = percents[level] %}
-        {% set level = levels[level] %}
-        {# This ID count is maybe not perfect but hopefully good enough... #}
-        {% set id = "progress-" ~ name ~ "-" ~ entry_name | slugify %}
+          {% endif %}
+
+          {% set percent = percents[level] %}
+          {% set level = levels[level] %}
+          {# This ID count is maybe not perfect but hopefully good enough... #}
+          {% set id = "progress-" ~ name ~ "-" ~ entry_name | slugify %}
 
         <td style="text-align:left">
           {{ entry_name }}
@@ -36,8 +50,10 @@
             <label for="{{ id }}" class="{{ level | slugify }}">{{ level | capitalize }}</label> #}
           </div>
         </td>
-        {% endfor %}
+          {% if index + 1 % items_per_row == 0 %}
       </tr>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
     </tbody>
   </table>

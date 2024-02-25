@@ -13,8 +13,8 @@ lang = "en"
 {{ progress_table(name="legend", style="note", header="Legend", data="
 
 - Familiar: 0
-  Experienced: 1
-  Advanced: 2
+- Experienced: 1
+- Advanced: 2
 ") }}
 
 ### Programming Languages
@@ -22,24 +22,20 @@ lang = "en"
 {{ progress_table(name="langs", data="
 
 - C++17: 2
-  Python: 2
-  Rust: 2
-  Go: 2
-  C: 1
-
--
-  Starlark: 1
-  Groovy: 1
-  Bash: 1
-  C#: 0
-  GLSL: 0
-
--
-  WGSL: 0
-  GDScript: 0
-  JavaScript: 0
-  TypeScript: 0
-  Java: 0
+- Python: 2
+- Rust: 2
+- Go: 2
+- C: 1
+- Starlark: 1
+- Groovy: 1
+- Bash: 1
+- C#: 0
+- GLSL: 0
+- WGSL: 0
+- GDScript: 0
+- JavaScript: 0
+- TypeScript: 0
+- Java: 0
 
 ") }}
 
@@ -49,17 +45,14 @@ lang = "en"
 
 {{ progress_table(name="tech", data="
 
--
-  Git: 2
-  Bazel: 2
-  Linux: 2
-  RPM / DNF / YUM: 2
-
--
-  CMake: 1
-  Docker: 1
-  Jira: 1
-  SaltStack: 1
+- Git: 2
+- Bazel: 2
+- Linux: 2
+- RPM / DNF / YUM: 2
+- CMake: 1
+- Docker: 1
+- Jira: 1
+- SaltStack: 1
 ") }}
 
 #### Game Engines
@@ -67,9 +60,9 @@ lang = "en"
 {{ progress_table(name="engines", data="
 
 - Godot: 0
-  Bevy: 0
-  Unity: 0
-  Unreal: 0
+- Bevy: 0
+- Unity: 0
+- Unreal: 0
 ") }}
 
 #### CI / Testing
@@ -77,10 +70,10 @@ lang = "en"
 {{ progress_table(name="testing", data="
 
 - Pytest: 2
-  Robot Framework: 1
-  GoogleTest: 1
-  GitHub Actions: 1
-  Jenkins: 0
+- Robot Framework: 1
+- GoogleTest: 1
+- GitHub Actions: 1
+- Jenkins: 0
 ") }}
 
 ## Work Experience
