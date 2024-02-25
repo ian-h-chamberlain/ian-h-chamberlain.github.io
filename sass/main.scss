@@ -144,6 +144,15 @@ body {
   .prose {
     h2:first-child {
       padding-top: 1em;
+
+    }
+
+    h2 + h3 {
+      padding-top: 1.5em;
+    }
+
+    h3 + h4 {
+      margin-top: 0;
     }
 
     // Normally you'd probably have a :not(href) selector here to avoid styling
@@ -182,33 +191,33 @@ body {
     line-height: 1.25em;
     font-size: small;
 
-    label {
-      &.proficient {
-        color: var(--callout-tip-color);
-      }
+    // label {
+    //   &.proficient {
+    //     color: var(--callout-tip-color);
+    //   }
 
-      &.experienced {
-        color: var(--callout-question-color);
-      }
+    //   &.experienced {
+    //     color: var(--callout-question-color);
+    //   }
 
-      &.familiar {
-        color: var(--callout-important-color);
-      }
-    }
+    //   &.familiar {
+    //     color: var(--callout-important-color);
+    //   }
+    // }
 
-    progress[value] {
-      &.proficient {
-        --progress-value-color: var(--callout-tip-color);
-      }
+    // progress[value] {
+    //   &.proficient {
+    //     --progress-value-color: var(--callout-tip-color);
+    //   }
 
-      &.experienced {
-        --progress-value-color: var(--callout-question-color);
-      }
+    //   &.experienced {
+    //     --progress-value-color: var(--callout-question-color);
+    //   }
 
-      &.familiar {
-        --progress-value-color: var(--callout-important-color);
-      }
-    }
+    //   &.familiar {
+    //     --progress-value-color: var(--callout-important-color);
+    //   }
+    // }
 
     progress[value] {
       max-width: 6em;
