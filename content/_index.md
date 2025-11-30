@@ -10,7 +10,7 @@ lang = "en"
 <!-- markdownlint-disable-next-line single-h1 -->
 # About me
 
-Hi! I'm Ian, a software engineer living in the Boston area.
+Hi! I'm Ian, a software engineer living in Seattle.
 
 I've been hacking around on computers since I was pretty young, as well as playing
 computer/video games. As a kid, my interest in programming was sparked by my uncle

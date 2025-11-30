@@ -7,8 +7,7 @@ description = "Licenses and disclaimers"
 lang = "en"
 +++
 
-Website contents © Ian Chamberlain 2023.
-<br/>
+Website contents {{ copyright() }}.
 All opinions are my own.
 
 ## Software

@@ -21,14 +21,14 @@ lang = "en"
 
 {{ progress_table(name="langs", data="
 
+- Rust: 2
 - C++17: 2
 - Python: 2
-- Rust: 2
 - Go: 2
 - C: 1
+- Bash: 1
 - Starlark: 1
 - Groovy: 1
-- Bash: 1
 - C#: 0
 - GLSL: 0
 - WGSL: 0
@@ -48,11 +48,11 @@ lang = "en"
 - Git: 2
 - Bazel: 2
 - Linux: 2
-- RPM / DNF / YUM: 2
+- RPM / DNF: 2
 - CMake: 1
 - Docker: 1
 - Jira: 1
-- SaltStack: 1
+- SaltStack: 0
 ") }}
 
 #### Game Engines
@@ -78,11 +78,27 @@ lang = "en"
 
 ## Work Experience
 
+### [The Walt Disney Company](https://www.disney.com/)
+
+{% borderless_table() %}
+| :----------------------- | -------------------: |
+| Senior Software Engineer | _Oct. 2024--present_ |
+{% end %}
+
+- Implemented new client features and bug fixes for Hulu and Disney+ apps on the Native Client Platform (NCP).
+  - Shipped production‐quality consumer client on many platforms: PlayStation, Xbox, Broadcom set‐top boxes, and more.
+  - Applied lint tools to validate app configuration in continuous integration (CI) to prevent build failure and merge conflicts.
+  - Introduced automated code ownership and pull request labeling to accelerate code review and reduce developers’ cognitive overhead.
+  - Led a small group ”Hackathon” to brainstorm new user‐facing features for the Hulu app. Implemented a ”quick‐add” feature together the group and presented a demo to the larger streaming organization.
+- Implemented new Hulu changes to prepare for release on a new platform: Amazon Fire Stick 4K Select (Vega OS).
+  - Worked with video player engineers to identify the root cause of major bugs that would degrade user experience or violate streaming rights agreements.
+  - Led the design of an authentication rearchitecture to enable on‐device user login, including existing PS5 users.
+
 ### [Juniper Networks, Inc.](https://www.juniper.net/) (formerly 128 Technology, acquired Nov. 2020)
 
 {% borderless_table() %}
 | :-------------------- | ---------------------: |
-| Software Engineer IV  | _Jul. 2021--present_   |
+| Software Engineer IV  | _Jul. 2021--Oct. 2024   |
 | Software Engineer III | _Nov. 2020--Jul. 2021_ |
 | Software Engineer II  | _Mar. 2019--Nov. 2020_ |
 | Software Engineer I   | _Jun. 2017--Mar. 2019_ |

@@ -40,11 +40,11 @@ fairly young, we have made a good amount of progress towards that goal:
 - [`citro3d-rs`](https://github.com/rust3ds/citro3d-rs)
   is a similar set of bindings and safe wrappers for `citro3d`.
   It is much more of a work-in-progress and under active development.
-- [`test-runner`](https://github.com/rust3ds/test-runner)
-  is a helper that runs [Citra](https://citra-emu.org) in a container
-  in order to run test executables in a way that's suitable for use in CI pipelines.
-  Part of this work involved implementing changes to Citra upstream to leverage
-  the [GDB File I/O protocol] for test output.
+- [`test-runner`](https://github.com/rust3ds/test-runner) is a helper that runs
+  [Azahar](https://azahar-emu.org/) (formerly Citra) in a container on GitHub
+  Actions in order to run test executables in a way that's suitable for use in
+  CI pipelines. Part of this work involved implementing changes to Citra upstream to
+  leverage the [GDB File I/O protocol] for test output.
 
 [armv6k-nintendo-3ds]: https://doc.rust-lang.org/rustc/platform-support/armv6k-nintendo-3ds.html
 [GDB File I/O protocol]: https://sourceware.org/gdb/current/onlinedocs/gdb.html/File_002dI_002fO-Overview.html#File_002dI_002fO-Overview
@@ -58,7 +58,8 @@ Sometimes the best way to make something better is to do it yourself!
   compiler error messages in VSCode.
 - Improved how temporary `:help` buffers behave in
   [vscode-neovim](https://github.com/vscode-neovim/vscode-neovim)
-  (my daily driver for text editing).
+  (usually my daily driver for text editing).
+- Added some small `tree-sitter` API features to [neovim](https://github.com/neovim/neovim)
 - Added support for the Rust language to [code.golf](https://code.golf).
 
 ## Shout-outs
@@ -83,14 +84,11 @@ In no particular order, some tools and libraries that I think are awesome:
   and has an incredibly large repository of packages.
 - [Bevy](https://bevyengine.org) is a code-first, data-driven game engine
   powered by Rust.
-- [kinto](https://kinto.sh) makes Windows / Linux keyboards feel like macOS,
-  which is super helpful after years of muscle memory have set in.
 - The family of [Rust](https://rust.extension.sh), [Go](https://go.extension.sh), and
   [C++](https://cpp.extension.sh) search extensions built by [Huhu](https://huhu.io)
   make searching standard library and third-party package documentation super easy.
 - [goplay.tools](https://goplay.tools/) is a significantly nicer user experience
-  than the default [go.dev playground](https://go.dev/play), and is my Go-to for
-  testing out code snippets.
+  than the default [go.dev playground](https://go.dev/play) for testing out code snippets.
 - [Refined GitHub](https://github.com/refined-github/refined-github) significantly
   improves the GitHub user experience with a ton of small tweaks, style changes,
   and keyboard shortcuts. It's hard to live without.
