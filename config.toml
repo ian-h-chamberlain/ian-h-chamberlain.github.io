@@ -6,7 +6,7 @@ default_language = "en"
 theme = "serene"
 
 build_search_index = false
-generate_feed = false
+generate_feeds = false
 compile_sass = true
 minify_html = true
 
@@ -27,6 +27,13 @@ highlight_themes_css = [
 paths = "on"
 taxonomies = "on"
 anchors = "on"
+
+[link_checker]
+# These might be IP blocking GitHub or something like that:
+skip_prefixes = [
+    "https://www.disney.com/",
+    "https://goplay.tools/",
+]
 
 [extra]
 name = "Ian H. Chamberlain"
