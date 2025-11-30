@@ -1,0 +1,81 @@
+# TODO: should I put dates on here? It might be useful to point out how recent
+# they were, but also would be more nebulous for corewa-rs...
+
+[[project]]
+name = "Pist Off"
+desc = """[
+    {{
+        image(
+            alt="Several blocks of different colors misaligned inside a larger
+                cube-shaped wooden frame.",
+            title="Pist Off",
+            path="/images/pist-off.png",
+            width=150
+        )
+    }}
+](https://ian-h-chamberlain.itch.io/pist-off)
+
+A game I made in nine days for [Bevy Jam #3](https://itch.io/jam/bevy-jam-3)
+(theme: "side effects") with the [Bevy Game Engine](https://bevyengine.org).
+
+The objective of the game is to push each colored block back into place inside
+the cube --- but doing so can cause unwanted side effects. Once all the blocks
+are in place, the difficulty will increase and the next level begins.
+
+Ranked 15 / 78 for theme interpretation and 26 / 78 overall.
+"""
+tags = ["bevy", "rust", "game", "jam"]
+links = [
+    { name = "itch.io", url = "https://ian-h-chamberlain.itch.io/pist-off" },
+    { name = "Jam entry", url = "https://itch.io/jam/bevy-jam-3/rate/2006744" },
+    { name = "GitHub", url = "https://github.com/ian-h-chamberlain/pist-off" },
+]
+
+[[project]]
+name = "[ɐ⊅] — Stars Exhumed"
+desc = """[
+    {{
+        image(
+            title="Stars Exhumed",
+            alt="A screenshot of a HUD including a parchment and some stars
+                overlaying a first-person view of mountains against a starry sky.",
+            path="/images/stars-exhumed.png",
+            width=150
+        )
+    }}
+](https://ian-h-chamberlain.itch.io/stars-exhumed)
+
+A game made in nine days for the [Godot Wild Jam #57](https://itch.io/jam/godot-wild-jam-57)
+(theme: "forgotten knowledge"), and also my first time making a game with Godot!
+
+In this game, you seek to rediscover the lost powers of the constellations.
+First, find spells by drawing constellations in the night sky. Later, you can
+draw the same shapes to cast those spells. Blast apart the incoming asteroids
+to protect the planet!
+
+Ranked 14 / 46 for originality and 25 / 46 overall.
+"""
+tags = ["godot", "game", "jam"]
+links = [
+    { name = "itch.io", url = "https://ian-h-chamberlain.itch.io/stars-exhumed" },
+    { name = "Jam entry", url = "https://itch.io/jam/godot-wild-jam-57/rate/2073028" },
+    { name = "GitHub", url = "https://github.com/ian-h-chamberlain/stars-exhumed" },
+]
+
+[[project]]
+name = "corewa-rs"
+desc = """
+A partial implementation of [Core War](https://en.wikipedia.org/wiki/Core_War),
+a programming battle game, in Rust. It can load and assemble redcode programs
+(warriors), as well as run a single warrior in a Memory Array Redcode Simulator
+(MARS).
+
+`vscode-redcode` is a companion VSCode extension for syntax highlighting Redcode,
+the assembly language used for writing warriors.
+"""
+tags = ["rust", "redcode", "mars"]
+links = [
+    { name = "corewa.rs", url = "https://corewa.rs/" },
+    { name = "vscode-redcode", url = "https://marketplace.visualstudio.com/items?itemName=corewa-rs.redcode" },
+    { name = "GitHub", url = "https://github.com/corewa-rs/corewars" },
+]
