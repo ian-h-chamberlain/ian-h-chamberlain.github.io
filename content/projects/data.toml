@@ -2,42 +2,66 @@
 
 [[project]]
 name = "Pangoroller"
-date = "June 2026"
-desc = """
-A small jam game inspired by QWOP, Sanic Ball, Marble Blast
+desc = """[{{
+    image(
+        alt="",
+        title="Pangoroller",
+        path="/images/pangoroller.png",
+        width=200
+    )
+}}](https://ian-h-chamberlain.com/pangoroller)
+A small jam game inspired by QWOP, Sanic Ball, and Marble Blast. Use the keyboard
+to build up speed and roll around the racetrack without falling off!
+
+Built with Godot Engine in a weekend, compiled to Wasm and playable in the browser.
+The pangolin's scales are rendered procedurally with a custom shader.
 """
-tags = ["game", "jam"]
+tags = ["game", "jam", "godot"]
 links = [
-  { name = "play", url = "/pangoroller" },
+  { name = "intro", url = "https://ian-h-chamberlain.com/pangoroller" },
+  { name = "play", url = "https://ian-h-chamberlain.com/pangoroller/play.html" },
   { name = "github", url = "https://github.com/ian-h-chamberlain/pangoroller" },
 ]
 
 [[project]]
-name = "codemirror-nu"
-date = "March 2026"
-desc = """
-Highlight Nushell code with CodeMirror, using a translation layer from tree-sitter to [Lezer]
+name = "codemirror-tree-sitter"
+desc = """[{{
+    image(
+        alt="",
+        title="Pist Off",
+        path="/images/codemirror.png",
+        width=200
+    )
+}}](https://ian-h-chamberlain.com/codemirror-tree-sitter)
 
-[Lezer]: TODO
+An adapter library for syntax highlighting on the web. The adapter provides
+a way to translate Wasm tree-sitter grammars into [Lezer](https://lezer.codemirror.net)
+parsers, which can be plugged into [CodeMirror](https://codemirror.net) and used
+like for highlighting.
+
+This offers a way to add highlighting to CodeMirror for languages that aren't
+already supported, but do have an existing tree-sitter grammar.
+
+The demo shows syntax highlighting for [Nushell](https://www.nushell.sh)
+by adapting the [tree-sitter-nu](https://github.com/nushell/tree-sitter-nu)
 """
 tags = ["nushell", "tree-sitter", "highlight"]
 links = [
-  # TODO
+  { name = "demo", url = "https://ian-h-chamberlain.com/codemirror-tree-sitter" },
+  { name = "github", url = "https://github.com/ian-h-chamberlain/codemirror-tree-sitter" },
 ]
 
 [[project]]
 name = "Pist Off"
-desc = """[
-    {{
-        image(
-            alt="Several blocks of different colors misaligned inside a larger
-                cube-shaped wooden frame.",
-            title="Pist Off",
-            path="/images/pist-off.png",
-            width=150
-        )
-    }}
-](https://ian-h-chamberlain.itch.io/pist-off)
+desc = """[{{
+    image(
+        alt="Several blocks of different colors misaligned inside a larger
+            cube-shaped wooden frame.",
+        title="Pist Off",
+        path="/images/pist-off.png",
+        width=200
+    )
+}}](https://ian-h-chamberlain.itch.io/pist-off)
 
 A game I made in nine days for [Bevy Jam #3](https://itch.io/jam/bevy-jam-3)
 (theme: "side effects") with the [Bevy Game Engine](https://bevyengine.org).
@@ -57,17 +81,15 @@ links = [
 
 [[project]]
 name = "[ɐ⊅] — Stars Exhumed"
-desc = """[
-    {{
-        image(
-            title="Stars Exhumed",
-            alt="A screenshot of a HUD including a parchment and some stars
-                overlaying a first-person view of mountains against a starry sky.",
-            path="/images/stars-exhumed.png",
-            width=150
-        )
-    }}
-](https://ian-h-chamberlain.itch.io/stars-exhumed)
+desc = """[{{
+    image(
+        title="Stars Exhumed",
+        alt="A screenshot of a HUD including a parchment and some stars
+            overlaying a first-person view of mountains against a starry sky.",
+        path="/images/stars-exhumed.png",
+        width=200
+    )
+}}](https://ian-h-chamberlain.itch.io/stars-exhumed)
 
 A game made in nine days for the [Godot Wild Jam #57](https://itch.io/jam/godot-wild-jam-57)
 (theme: "forgotten knowledge"), and also my first time making a game with Godot!

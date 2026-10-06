@@ -1,0 +1,5 @@
+{#-
+  Process the input by stripping all <p> tags (e.g. to make \n\n into \n for bullets.)
+  It's a little janky but whatever, gets the job done.
+-#}
+{{body | markdown(inline=true) | replace(from="<p>", to="") | replace(from="</p>", to="") | safe }}
