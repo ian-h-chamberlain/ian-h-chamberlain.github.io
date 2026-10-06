@@ -4,7 +4,9 @@
 name = "Pangoroller"
 desc = """[{{
     image(
-        alt="",
+        alt="A screenshot of a game, with a brown scaly ball sitting on a green track.
+            Directional arrows appear next the ball, while a timer and keyboard keys
+            are shown at the top of the screen.",
         title="Pangoroller",
         path="/images/pangoroller.png",
         width=200
@@ -27,8 +29,8 @@ links = [
 name = "codemirror-tree-sitter"
 desc = """[{{
     image(
-        alt="",
-        title="Pist Off",
+        alt="A screenshot of a website, showing a code editor with syntax highlighting.",
+        title="codemirror-tree-sitter",
         path="/images/codemirror.png",
         width=200
     )
@@ -43,9 +45,10 @@ This offers a way to add highlighting to CodeMirror for languages that aren't
 already supported, but do have an existing tree-sitter grammar.
 
 The demo shows syntax highlighting for [Nushell](https://www.nushell.sh)
-by adapting the [tree-sitter-nu](https://github.com/nushell/tree-sitter-nu)
+using the official [tree-sitter-nu](https://github.com/nushell/tree-sitter-nu)
+in combination with the CodeMirror adapter.
 """
-tags = ["nushell", "tree-sitter", "highlight"]
+tags = ["nushell", "tree-sitter", "codemirror"]
 links = [
   { name = "demo", url = "https://ian-h-chamberlain.com/codemirror-tree-sitter" },
   { name = "github", url = "https://github.com/ian-h-chamberlain/codemirror-tree-sitter" },
