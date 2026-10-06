@@ -1,6 +1,12 @@
 // Start off with all the same stuff as the base theme
 @import "../themes/serene/sass/main";
 
+@mixin underline($color: var(--primary-color)) {
+  text-decoration: underline 1.5px $color !important;
+  border-bottom: none !important;
+  text-underline-offset: 2px;
+}
+
 body {
   header nav {
     overflow: hidden;
@@ -37,7 +43,7 @@ body {
       margin: 0 0.3em 0 0.1em;
 
       &:hover {
-        color: var(--primary-color)
+        color: var(--primary-color);
       }
 
       --toggler-initial: translate(0em, -0.1em);
@@ -68,15 +74,17 @@ body {
 
       transition-property: opacity, max-width, margin;
       transition-timing-function: ease-out;
-      transition-duration:  var(--toggle-animation-duration);
+      transition-duration: var(--toggle-animation-duration);
       transition-delay: 0;
 
       --max-fold-width: 10em;
 
       &.shown-custom {
         max-width: var(--max-fold-width);
-        transition-delay: 0, var(--toggle-animation-duration), var(--toggle-animation-duration);
-        transition-duration:  var(--toggle-animation-duration), var(--toggle-animation-duration);
+        transition-delay:
+          0, var(--toggle-animation-duration), var(--toggle-animation-duration);
+        transition-duration:
+          var(--toggle-animation-duration), var(--toggle-animation-duration);
         transition-timing-function: ease-in;
       }
 
@@ -100,6 +108,15 @@ body {
     margin-right: auto;
   }
 
+  footer a {
+    text-decoration: underline 1px !important;
+    text-underline-offset: 2px;
+  }
+
+  &.homepage #links #left a {
+    @include underline;
+  }
+
   section#info #bio {
     p {
       margin-top: 0;
@@ -112,7 +129,10 @@ body {
   }
 
   // Seems that non-prose pages don't have this set by default
-  pre, code, kbd, samp {
+  pre,
+  code,
+  kbd,
+  samp {
     font-family: var(--code-font);
   }
 
@@ -137,9 +157,13 @@ body {
     .footnote-definition-label:after {
       content: " ";
     }
+
+    .links a {
+      @include underline;
+    }
   }
 
-  :not(pre)>code {
+  :not(pre) > code {
     // Copied from the equivalent '.proj p>code' rule in the base theme
     font-family: var(--code-font);
     font-size: 0.8em;
@@ -152,7 +176,6 @@ body {
   .prose {
     h2:first-child {
       padding-top: 1em;
-
     }
 
     h2 + h3 {
@@ -166,7 +189,7 @@ body {
     // Normally you'd probably have a :not(href) selector here to avoid styling
     // internal links the same way, but I don't think I actually have any internal
     // links (especially not code) so 🤷 guess it will be fine like this
-    :not(.footnote-reference)>a>code {
+    :not(.footnote-reference) > a > code {
       padding-right: 0;
 
       &::after {
@@ -184,7 +207,7 @@ body {
       thead:empty,
       tr:empty,
       th:empty {
-        display: none
+        display: none;
       }
 
       tr,
