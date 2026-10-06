@@ -1,5 +1,29 @@
-# TODO: should I put dates on here? It might be useful to point out how recent
-# they were, but also would be more nebulous for corewa-rs...
+# TODO: should I display dates here? Maybe for projects I have "precise" dates for
+
+[[project]]
+name = "Pangoroller"
+date = "June 2026"
+desc = """
+A small jam game inspired by QWOP, Sanic Ball, Marble Blast
+"""
+tags = ["game", "jam"]
+links = [
+  { name = "play", url = "/pangoroller" },
+  { name = "github", url = "https://github.com/ian-h-chamberlain/pangoroller" },
+]
+
+[[project]]
+name = "codemirror-nu"
+date = "March 2026"
+desc = """
+Highlight Nushell code with CodeMirror, using a translation layer from tree-sitter to [Lezer]
+
+[Lezer]: TODO
+"""
+tags = ["nushell", "tree-sitter", "highlight"]
+links = [
+  # TODO
+]
 
 [[project]]
 name = "Pist Off"
@@ -26,9 +50,9 @@ Ranked 15 / 78 for theme interpretation and 26 / 78 overall.
 """
 tags = ["bevy", "rust", "game", "jam"]
 links = [
-    { name = "itch.io", url = "https://ian-h-chamberlain.itch.io/pist-off" },
-    { name = "Jam entry", url = "https://itch.io/jam/bevy-jam-3/rate/2006744" },
-    { name = "GitHub", url = "https://github.com/ian-h-chamberlain/pist-off" },
+  { name = "itch.io", url = "https://ian-h-chamberlain.itch.io/pist-off" },
+  { name = "jam entry", url = "https://itch.io/jam/bevy-jam-3/rate/2006744" },
+  { name = "GitHub", url = "https://github.com/ian-h-chamberlain/pist-off" },
 ]
 
 [[project]]
@@ -57,9 +81,9 @@ Ranked 14 / 46 for originality and 25 / 46 overall.
 """
 tags = ["godot", "game", "jam"]
 links = [
-    { name = "itch.io", url = "https://ian-h-chamberlain.itch.io/stars-exhumed" },
-    { name = "Jam entry", url = "https://itch.io/jam/godot-wild-jam-57/rate/2073028" },
-    { name = "GitHub", url = "https://github.com/ian-h-chamberlain/stars-exhumed" },
+  { name = "itch.io", url = "https://ian-h-chamberlain.itch.io/stars-exhumed" },
+  { name = "Jam entry", url = "https://itch.io/jam/godot-wild-jam-57/rate/2073028" },
+  { name = "GitHub", url = "https://github.com/ian-h-chamberlain/stars-exhumed" },
 ]
 
 [[project]]
@@ -75,7 +99,7 @@ the assembly language used for writing warriors.
 """
 tags = ["rust", "redcode", "mars"]
 links = [
-    { name = "corewa.rs", url = "https://corewa.rs/" },
-    { name = "vscode-redcode", url = "https://marketplace.visualstudio.com/items?itemName=corewa-rs.redcode" },
-    { name = "GitHub", url = "https://github.com/corewa-rs/corewars" },
+  { name = "corewa.rs", url = "https://corewa.rs/" },
+  { name = "vscode-redcode", url = "https://marketplace.visualstudio.com/items?itemName=corewa-rs.redcode" },
+  { name = "GitHub", url = "https://github.com/corewa-rs/corewars" },
 ]
