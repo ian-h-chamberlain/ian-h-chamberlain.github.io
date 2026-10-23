@@ -1,12 +1,17 @@
-{%- set token = get_env(name="GITHUB_TOKEN") -%}
-{%- set headers=["authorization=Bearer " ~ token] -%}
+{% set local_contents = load_data(path="/resume.html", required=false) %}
+{% if local_contents %}
+  {{ local_contents | safe }}
+{% else %}
+  {% set token = get_env(name="GITHUB_TOKEN") %}
+  {% set headers=["authorization=Bearer " ~ token] %}
+  {% set release = load_data(
+    url="https://api.github.com/repos/ian-h-chamberlain/resume/releases/latest",
+    content_type="application/json",
+    headers=headers | concat(with=["accept=application/vnd.github+json"]),
+    format="json",
+  ) %}
+  {% set asset = release.assets | filter(attribute="name", value="resume.html") | first -%}
 
-{%- set release = load_data(
-  url="https://api.github.com/repos/ian-h-chamberlain/resume/releases/latest",
-  content_type="application/json",
-  headers=headers | concat(with=["accept=application/vnd.github+json"]),
-  format="json",
-) -%}
-{%- set asset = release.assets | filter(attribute="name", value="resume.html") | first -%}
+{{ load_data(url=asset.url, headers=headers | concat(with="accept=application/octet-stream")) | safe -}}
 
-{{- load_data(url=asset.url, headers=headers | concat(with="accept=application/octet-stream")) | safe -}}
+{% endif %}

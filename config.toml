@@ -10,6 +10,8 @@ generate_feeds = false
 compile_sass = true
 minify_html = true
 
+ignored_static = ["resume.html"]
+
 [markdown]
 render_emoji = true
 smart_punctuation = true
@@ -53,6 +55,8 @@ links = [
 ]
 
 homepage_layout = "about"
+force_theme = false
+reaction = false
 
 sections = [
     { name = "experience", path = "/experience", is_external = false, hidden = false },
