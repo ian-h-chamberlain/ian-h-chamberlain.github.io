@@ -186,6 +186,7 @@ body {
       margin-top: 0;
     }
 
+
     // Normally you'd probably have a :not(href) selector here to avoid styling
     // internal links the same way, but I don't think I actually have any internal
     // links (especially not code) so 🤷 guess it will be fine like this
@@ -218,38 +219,20 @@ body {
     }
   }
 
+  .progress-table {
+    margin-top: -10px;
+    margin-bottom: 10px;
+
+    td {
+      text-align: left;
+    }
+  }
+
   .progress {
     line-height: 1.25em;
     font-size: small;
 
-    // label {
-    //   &.proficient {
-    //     color: var(--callout-tip-color);
-    //   }
-
-    //   &.experienced {
-    //     color: var(--callout-question-color);
-    //   }
-
-    //   &.familiar {
-    //     color: var(--callout-important-color);
-    //   }
-    // }
-
-    // progress[value] {
-    //   &.proficient {
-    //     --progress-value-color: var(--callout-tip-color);
-    //   }
-
-    //   &.experienced {
-    //     --progress-value-color: var(--callout-question-color);
-    //   }
-
-    //   &.familiar {
-    //     --progress-value-color: var(--callout-important-color);
-    //   }
-    // }
-
+    // TODO: could be cool to make this more on a spectrum
     progress[value] {
       max-width: 6em;
       height: 0.75em;
