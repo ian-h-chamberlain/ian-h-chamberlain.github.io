@@ -1,0 +1,130 @@
+# TODO: should I display dates here? Maybe for projects I have "precise" dates for
+
+[[project]]
+name = "Pangoroller"
+desc = """[{{
+    image(
+        alt="A screenshot of a game, with a brown scaly ball sitting on a green track.
+            Directional arrows appear next the ball, while a timer and keyboard keys
+            are shown at the top of the screen.",
+        title="Pangoroller",
+        path="/images/pangoroller.png",
+        width=200
+    )
+}}](https://ian-h-chamberlain.com/pangoroller)
+A small jam game inspired by QWOP, Sanic Ball, and Marble Blast. Use the keyboard
+to build up speed and roll around the racetrack without falling off!
+
+Built with Godot Engine in a weekend, compiled to Wasm and playable in the browser.
+The pangolin's scales are rendered procedurally with a custom shader.
+"""
+tags = ["game", "jam", "godot"]
+links = [
+  { name = "intro", url = "https://ian-h-chamberlain.com/pangoroller" },
+  { name = "play", url = "https://ian-h-chamberlain.com/pangoroller/play.html" },
+  { name = "github", url = "https://github.com/ian-h-chamberlain/pangoroller" },
+]
+
+[[project]]
+name = "codemirror-tree-sitter"
+desc = """[{{
+    image(
+        alt="A screenshot of a website, showing a code editor with syntax highlighting.",
+        title="codemirror-tree-sitter",
+        path="/images/codemirror.png",
+        width=200
+    )
+}}](https://ian-h-chamberlain.com/codemirror-tree-sitter)
+
+An adapter library for syntax highlighting on the web. The adapter provides
+a way to translate Wasm tree-sitter grammars into [Lezer](https://lezer.codemirror.net)
+parsers, which can be plugged into [CodeMirror](https://codemirror.net) and used
+like for highlighting.
+
+This offers a way to add highlighting to CodeMirror for languages that aren't
+already supported, but do have an existing tree-sitter grammar.
+
+The demo shows syntax highlighting for [Nushell](https://www.nushell.sh)
+using the official [tree-sitter-nu](https://github.com/nushell/tree-sitter-nu)
+in combination with the CodeMirror adapter.
+"""
+tags = ["nushell", "tree-sitter", "codemirror"]
+links = [
+  { name = "demo", url = "https://ian-h-chamberlain.com/codemirror-tree-sitter" },
+  { name = "github", url = "https://github.com/ian-h-chamberlain/codemirror-tree-sitter" },
+]
+
+[[project]]
+name = "Pist Off"
+desc = """[{{
+    image(
+        alt="Several blocks of different colors misaligned inside a larger
+            cube-shaped wooden frame.",
+        title="Pist Off",
+        path="/images/pist-off.png",
+        width=200
+    )
+}}](https://ian-h-chamberlain.itch.io/pist-off)
+
+A game I made in nine days for [Bevy Jam #3](https://itch.io/jam/bevy-jam-3)
+(theme: "side effects") with the [Bevy Game Engine](https://bevyengine.org).
+
+The objective of the game is to push each colored block back into place inside
+the cube --- but doing so can cause unwanted side effects. Once all the blocks
+are in place, the difficulty will increase and the next level begins.
+
+Ranked 15 / 78 for theme interpretation and 26 / 78 overall.
+"""
+tags = ["bevy", "rust", "game", "jam"]
+links = [
+  { name = "itch.io", url = "https://ian-h-chamberlain.itch.io/pist-off" },
+  { name = "jam entry", url = "https://itch.io/jam/bevy-jam-3/rate/2006744" },
+  { name = "GitHub", url = "https://github.com/ian-h-chamberlain/pist-off" },
+]
+
+[[project]]
+name = "[ɐ⊅] — Stars Exhumed"
+desc = """[{{
+    image(
+        title="Stars Exhumed",
+        alt="A screenshot of a HUD including a parchment and some stars
+            overlaying a first-person view of mountains against a starry sky.",
+        path="/images/stars-exhumed.png",
+        width=200
+    )
+}}](https://ian-h-chamberlain.itch.io/stars-exhumed)
+
+A game made in nine days for the [Godot Wild Jam #57](https://itch.io/jam/godot-wild-jam-57)
+(theme: "forgotten knowledge"), and also my first time making a game with Godot!
+
+In this game, you seek to rediscover the lost powers of the constellations.
+First, find spells by drawing constellations in the night sky. Later, you can
+draw the same shapes to cast those spells. Blast apart the incoming asteroids
+to protect the planet!
+
+Ranked 14 / 46 for originality and 25 / 46 overall.
+"""
+tags = ["godot", "game", "jam"]
+links = [
+  { name = "itch.io", url = "https://ian-h-chamberlain.itch.io/stars-exhumed" },
+  { name = "Jam entry", url = "https://itch.io/jam/godot-wild-jam-57/rate/2073028" },
+  { name = "GitHub", url = "https://github.com/ian-h-chamberlain/stars-exhumed" },
+]
+
+[[project]]
+name = "corewa-rs"
+desc = """
+A partial implementation of [Core War](https://en.wikipedia.org/wiki/Core_War),
+a programming battle game, in Rust. It can load and assemble redcode programs
+(warriors), as well as run a single warrior in a Memory Array Redcode Simulator
+(MARS).
+
+`vscode-redcode` is a companion VSCode extension for syntax highlighting Redcode,
+the assembly language used for writing warriors.
+"""
+tags = ["rust", "redcode", "mars"]
+links = [
+  { name = "corewa.rs", url = "https://corewa.rs/" },
+  { name = "vscode-redcode", url = "https://marketplace.visualstudio.com/items?itemName=corewa-rs.redcode" },
+  { name = "GitHub", url = "https://github.com/corewa-rs/corewars" },
+]
