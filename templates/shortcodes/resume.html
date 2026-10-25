@@ -2,7 +2,7 @@
 {% if local_contents %}
   {{ local_contents | safe }}
 {% else %}
-  {% set token = get_env(name="GITHUB_TOKEN") %}
+  {% set token = get_env(name="GH_TOKEN") %}
   {% set headers=["authorization=Bearer " ~ token] %}
   {% set release = load_data(
     url="https://api.github.com/repos/ian-h-chamberlain/resume/releases/latest",

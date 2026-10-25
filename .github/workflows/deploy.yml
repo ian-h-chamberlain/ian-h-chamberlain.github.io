@@ -4,25 +4,9 @@ on:
   push:
     branches:
       - main
-  pull_request:
   workflow_dispatch:
 
 jobs:
-  check:
-    runs-on: ubuntu-latest
-    if: github.ref != 'refs/heads/main'
-    steps:
-      - name: Checkout main
-        uses: actions/checkout@v4
-
-      - name: Build and check only
-        uses: shalzz/zola-deploy-action@v0.20.0
-        env:
-          BUILD_ONLY: true
-          BUILD_FLAGS: --drafts
-          CHECK_LINKS: true
-          CHECK_FLAGS: --drafts
-
   deploy:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
@@ -34,4 +18,5 @@ jobs:
         uses: shalzz/zola-deploy-action@v0.20.0
         env:
           CHECK_LINKS: true
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
